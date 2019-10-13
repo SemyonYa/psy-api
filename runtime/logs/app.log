@@ -140,3 +140,342 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1570929530.6486
     'REQUEST_TIME' => 1570929530
 ]
+2019-10-13 21:07:05 [127.0.0.1][-][tt6qb6rd3qq2ehlk3vaas05egmv14e6k][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "favicon.ico". in C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('favicon.ico', Array)
+#1 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\OSPanel\domains\psy-api\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: РЎС‚СЂР°РЅРёС†Р° РЅРµ РЅР°Р№РґРµРЅР°. in C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\OSPanel\domains\psy-api\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2019-10-13 21:07:05 [127.0.0.1][-][tt6qb6rd3qq2ehlk3vaas05egmv14e6k][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'tt6qb6rd3qq2ehlk3vaas05egmv14e6k'
+    '_csrf' => '53084c6f30ad62ec04afb65da36051c4330f590f3bb6873272648007544a3c78a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"kyN0h0tEv1eduttkRGwtIVgnQNj1A4Rl\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'psy-api:100'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36'
+    'HTTP_ACCEPT' => 'image/webp,image/apng,image/*,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://psy-api:100/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en-US;q=0.9,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=tt6qb6rd3qq2ehlk3vaas05egmv14e6k; _csrf=53084c6f30ad62ec04afb65da36051c4330f590f3bb6873272648007544a3c78a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22kyN0h0tEv1eduttkRGwtIVgnQNj1A4Rl%22%3B%7D'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP-7.2-x64\\ext;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP-7.2-x64;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\database\\MySQL-5.6\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7.2-x64\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7.2-x64;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'psy-api'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '100'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/psy-api'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/psy-api'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/psy-api/web/index.php'
+    'REMOTE_PORT' => '64171'
+    'REDIRECT_URL' => '/favicon.ico'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/favicon.ico'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1570990025.122
+    'REQUEST_TIME' => 1570990025
+    'argv' => []
+    'argc' => 0
+]
+2019-10-13 21:13:12 [127.0.0.1][-][tt6qb6rd3qq2ehlk3vaas05egmv14e6k][error][yii\db\Exception] PDOException: PDO::__construct(): php_network_getaddresses: getaddrinfo failed: пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ.  in C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\db\Connection.php:698
+Stack trace:
+#0 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\db\Connection.php(698): PDO->__construct('mysql:host=loca...', 'yaptevsa', 'veter211=1', NULL)
+#1 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\db\Connection.php(624): yii\db\Connection->createPdoInstance()
+#2 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\db\Connection.php(1015): yii\db\Connection->open()
+#3 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\db\Connection.php(1002): yii\db\Connection->getMasterPdo()
+#4 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\db\Command.php(253): yii\db\Connection->getSlavePdo()
+#5 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\db\Command.php(1153): yii\db\Command->prepare(true)
+#6 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\db\Command.php(442): yii\db\Command->queryInternal('fetchAll', 7)
+#7 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\db\mysql\Schema.php(114): yii\db\Command->queryColumn()
+#8 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\db\Schema.php(236): yii\db\mysql\Schema->findTableNames('')
+#9 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2-gii\src\generators\model\Generator.php(171): yii\db\Schema->getTableNames()
+#10 [internal function]: yii\gii\generators\model\Generator->yii\gii\generators\model\{closure}()
+#11 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2-gii\src\components\ActiveField.php(46): call_user_func(Object(Closure))
+#12 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\gii\components\ActiveField->init()
+#13 [internal function]: yii\base\BaseObject->__construct(Array)
+#14 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\di\Container.php(384): ReflectionClass->newInstanceArgs(Array)
+#15 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\di\Container.php(156): yii\di\Container->build('yii\\gii\\compone...', Array, Array)
+#16 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\BaseYii.php(349): yii\di\Container->get('yii\\gii\\compone...', Array, Array)
+#17 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\widgets\ActiveForm.php(334): yii\BaseYii::createObject(Array)
+#18 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2-gii\src\generators\model\form.php(9): yii\widgets\ActiveForm->field(Object(yii\gii\generators\model\Generator), 'tableName')
+#19 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\View.php(348): require('C:\\OSPanel\\doma...')
+#20 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('C:\\OSPanel\\doma...', '[<span class="s...')
+#21 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2-gii\src\views\default\view.php(43): yii\base\View->renderFile('C:\\OSPanel\\doma...', Array)
+#22 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\View.php(348): require('C:\\OSPanel\\doma...')
+#23 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('C:\\OSPanel\\doma...', '[<span class="s...')
+#24 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('C:\\OSPanel\\doma...', Array, Object(yii\gii\controllers\DefaultController))
+#25 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\Controller.php(386): yii\base\View->render('view', Array, Object(yii\gii\controllers\DefaultController))
+#26 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2-gii\src\controllers\DefaultController.php(72): yii\base\Controller->render('view', Array)
+#27 [internal function]: yii\gii\controllers\DefaultController->actionView('model')
+#28 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#29 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#30 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('view', Array)
+#31 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('gii/default/vie...', Array)
+#32 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#33 C:\OSPanel\domains\psy-api\web\index.php(12): yii\base\Application->run()
+#34 {main}
+
+Next PDOException: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: Этот хост неизвестен.  in C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\db\Connection.php:698
+Stack trace:
+#0 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\db\Connection.php(698): PDO->__construct('mysql:host=loca...', 'yaptevsa', 'veter211=1', NULL)
+#1 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\db\Connection.php(624): yii\db\Connection->createPdoInstance()
+#2 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\db\Connection.php(1015): yii\db\Connection->open()
+#3 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\db\Connection.php(1002): yii\db\Connection->getMasterPdo()
+#4 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\db\Command.php(253): yii\db\Connection->getSlavePdo()
+#5 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\db\Command.php(1153): yii\db\Command->prepare(true)
+#6 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\db\Command.php(442): yii\db\Command->queryInternal('fetchAll', 7)
+#7 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\db\mysql\Schema.php(114): yii\db\Command->queryColumn()
+#8 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\db\Schema.php(236): yii\db\mysql\Schema->findTableNames('')
+#9 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2-gii\src\generators\model\Generator.php(171): yii\db\Schema->getTableNames()
+#10 [internal function]: yii\gii\generators\model\Generator->yii\gii\generators\model\{closure}()
+#11 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2-gii\src\components\ActiveField.php(46): call_user_func(Object(Closure))
+#12 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\gii\components\ActiveField->init()
+#13 [internal function]: yii\base\BaseObject->__construct(Array)
+#14 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\di\Container.php(384): ReflectionClass->newInstanceArgs(Array)
+#15 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\di\Container.php(156): yii\di\Container->build('yii\\gii\\compone...', Array, Array)
+#16 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\BaseYii.php(349): yii\di\Container->get('yii\\gii\\compone...', Array, Array)
+#17 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\widgets\ActiveForm.php(334): yii\BaseYii::createObject(Array)
+#18 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2-gii\src\generators\model\form.php(9): yii\widgets\ActiveForm->field(Object(yii\gii\generators\model\Generator), 'tableName')
+#19 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\View.php(348): require('C:\\OSPanel\\doma...')
+#20 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('C:\\OSPanel\\doma...', '[<span class="s...')
+#21 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2-gii\src\views\default\view.php(43): yii\base\View->renderFile('C:\\OSPanel\\doma...', Array)
+#22 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\View.php(348): require('C:\\OSPanel\\doma...')
+#23 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('C:\\OSPanel\\doma...', '[<span class="s...')
+#24 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('C:\\OSPanel\\doma...', Array, Object(yii\gii\controllers\DefaultController))
+#25 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\Controller.php(386): yii\base\View->render('view', Array, Object(yii\gii\controllers\DefaultController))
+#26 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2-gii\src\controllers\DefaultController.php(72): yii\base\Controller->render('view', Array)
+#27 [internal function]: yii\gii\controllers\DefaultController->actionView('model')
+#28 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#29 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#30 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('view', Array)
+#31 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('gii/default/vie...', Array)
+#32 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#33 C:\OSPanel\domains\psy-api\web\index.php(12): yii\base\Application->run()
+#34 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: Этот хост неизвестен.  in C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\db\Connection.php:635
+Stack trace:
+#0 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\db\Connection.php(1015): yii\db\Connection->open()
+#1 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\db\Connection.php(1002): yii\db\Connection->getMasterPdo()
+#2 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\db\Command.php(253): yii\db\Connection->getSlavePdo()
+#3 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\db\Command.php(1153): yii\db\Command->prepare(true)
+#4 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\db\Command.php(442): yii\db\Command->queryInternal('fetchAll', 7)
+#5 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\db\mysql\Schema.php(114): yii\db\Command->queryColumn()
+#6 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\db\Schema.php(236): yii\db\mysql\Schema->findTableNames('')
+#7 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2-gii\src\generators\model\Generator.php(171): yii\db\Schema->getTableNames()
+#8 [internal function]: yii\gii\generators\model\Generator->yii\gii\generators\model\{closure}()
+#9 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2-gii\src\components\ActiveField.php(46): call_user_func(Object(Closure))
+#10 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\gii\components\ActiveField->init()
+#11 [internal function]: yii\base\BaseObject->__construct(Array)
+#12 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\di\Container.php(384): ReflectionClass->newInstanceArgs(Array)
+#13 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\di\Container.php(156): yii\di\Container->build('yii\\gii\\compone...', Array, Array)
+#14 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\BaseYii.php(349): yii\di\Container->get('yii\\gii\\compone...', Array, Array)
+#15 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\widgets\ActiveForm.php(334): yii\BaseYii::createObject(Array)
+#16 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2-gii\src\generators\model\form.php(9): yii\widgets\ActiveForm->field(Object(yii\gii\generators\model\Generator), 'tableName')
+#17 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\View.php(348): require('C:\\OSPanel\\doma...')
+#18 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('C:\\OSPanel\\doma...', '[<span class="s...')
+#19 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2-gii\src\views\default\view.php(43): yii\base\View->renderFile('C:\\OSPanel\\doma...', Array)
+#20 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\View.php(348): require('C:\\OSPanel\\doma...')
+#21 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('C:\\OSPanel\\doma...', '[<span class="s...')
+#22 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('C:\\OSPanel\\doma...', Array, Object(yii\gii\controllers\DefaultController))
+#23 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\Controller.php(386): yii\base\View->render('view', Array, Object(yii\gii\controllers\DefaultController))
+#24 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2-gii\src\controllers\DefaultController.php(72): yii\base\Controller->render('view', Array)
+#25 [internal function]: yii\gii\controllers\DefaultController->actionView('model')
+#26 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#27 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#28 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('view', Array)
+#29 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('gii/default/vie...', Array)
+#30 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#31 C:\OSPanel\domains\psy-api\web\index.php(12): yii\base\Application->run()
+#32 {main}
+Additional Information:
+
+2019-10-13 21:13:09 [127.0.0.1][-][tt6qb6rd3qq2ehlk3vaas05egmv14e6k][info][application] $_GET = [
+    'id' => 'model'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'tt6qb6rd3qq2ehlk3vaas05egmv14e6k'
+    '_csrf' => '53084c6f30ad62ec04afb65da36051c4330f590f3bb6873272648007544a3c78a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"kyN0h0tEv1eduttkRGwtIVgnQNj1A4Rl\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'psy-api:100'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_REFERER' => 'http://psy-api:100/gii'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en-US;q=0.9,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=tt6qb6rd3qq2ehlk3vaas05egmv14e6k; _csrf=53084c6f30ad62ec04afb65da36051c4330f590f3bb6873272648007544a3c78a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22kyN0h0tEv1eduttkRGwtIVgnQNj1A4Rl%22%3B%7D'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP-7.2-x64\\ext;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP-7.2-x64;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\database\\MySQL-5.6\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7.2-x64\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7.2-x64;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'psy-api'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '100'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/psy-api'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/psy-api'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/psy-api/web/index.php'
+    'REMOTE_PORT' => '1747'
+    'REDIRECT_URL' => '/gii/model'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/gii/model'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1570990389.928
+    'REQUEST_TIME' => 1570990389
+    'argv' => []
+    'argc' => 0
+]
+2019-10-13 21:36:16 [127.0.0.1][-][tt6qb6rd3qq2ehlk3vaas05egmv14e6k][error][yii\db\Exception] PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'specialist_quantity' in 'field list' in C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\db\Command.php:1290
+Stack trace:
+#0 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\db\Command.php(1290): PDOStatement->execute()
+#1 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\db\Command.php(1158): yii\db\Command->internalExecute('SELECT `id`, `o...')
+#2 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\db\Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#3 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\db\Query.php(237): yii\db\Command->queryAll()
+#4 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\db\ActiveQuery.php(133): yii\db\Query->all(NULL)
+#5 C:\OSPanel\domains\psy-api\controllers\UserController.php(34): yii\db\ActiveQuery->all()
+#6 [internal function]: app\controllers\UserController->actionAll()
+#7 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#8 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#9 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('all', Array)
+#10 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('user/all', Array)
+#11 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 C:\OSPanel\domains\psy-api\web\index.php(12): yii\base\Application->run()
+#13 {main}
+
+Next yii\db\Exception: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'specialist_quantity' in 'field list'
+The SQL being executed was: SELECT `id`, `organization_name`, `login`, `specialist_quantity`, `parent_user_id`, `blocked` FROM `user` WHERE `blocked`=0 in C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\db\Schema.php:674
+Stack trace:
+#0 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\db\Command.php(1295): yii\db\Schema->convertException(Object(PDOException), 'SELECT `id`, `o...')
+#1 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\db\Command.php(1158): yii\db\Command->internalExecute('SELECT `id`, `o...')
+#2 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\db\Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#3 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\db\Query.php(237): yii\db\Command->queryAll()
+#4 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\db\ActiveQuery.php(133): yii\db\Query->all(NULL)
+#5 C:\OSPanel\domains\psy-api\controllers\UserController.php(34): yii\db\ActiveQuery->all()
+#6 [internal function]: app\controllers\UserController->actionAll()
+#7 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#8 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#9 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('all', Array)
+#10 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('user/all', Array)
+#11 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 C:\OSPanel\domains\psy-api\web\index.php(12): yii\base\Application->run()
+#13 {main}
+Additional Information:
+Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'specialist_quantity' in 'field list'
+)
+
+2019-10-13 21:36:16 [127.0.0.1][-][tt6qb6rd3qq2ehlk3vaas05egmv14e6k][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'tt6qb6rd3qq2ehlk3vaas05egmv14e6k'
+    '_csrf' => '53084c6f30ad62ec04afb65da36051c4330f590f3bb6873272648007544a3c78a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"kyN0h0tEv1eduttkRGwtIVgnQNj1A4Rl\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'psy-api:100'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.120 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en-US;q=0.9,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=tt6qb6rd3qq2ehlk3vaas05egmv14e6k; _csrf=53084c6f30ad62ec04afb65da36051c4330f590f3bb6873272648007544a3c78a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22kyN0h0tEv1eduttkRGwtIVgnQNj1A4Rl%22%3B%7D'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP-7.2-x64\\ext;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP-7.2-x64;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\database\\MySQL-5.6\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7.2-x64\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7.2-x64;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'psy-api'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '100'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/psy-api'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/psy-api'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/psy-api/web/index.php'
+    'REMOTE_PORT' => '9773'
+    'REDIRECT_URL' => '/user/all'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/user/all'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1570991776.29
+    'REQUEST_TIME' => 1570991776
+    'argv' => []
+    'argc' => 0
+]
