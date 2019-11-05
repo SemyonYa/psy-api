@@ -9,6 +9,7 @@ use Yii;
  *
  * @property int $id
  * @property string $name
+ * @property string $description
  * @property int $price
  * @property int $duration
  * @property int $specialist_id
@@ -36,6 +37,7 @@ class Good extends \yii\db\ActiveRecord
             [['name', 'price', 'duration', 'specialist_id'], 'required'],
             [['price', 'duration', 'specialist_id', 'invisible'], 'integer'],
             [['name'], 'string', 'max' => 45],
+            [['description'], 'string'],
             [['specialist_id'], 'exist', 'skipOnError' => true, 'targetClass' => Specialist::className(), 'targetAttribute' => ['specialist_id' => 'id']],
         ];
     }
@@ -48,6 +50,7 @@ class Good extends \yii\db\ActiveRecord
         return [
             'id' => 'ID',
             'name' => 'Name',
+            'description' => 'Description',
             'price' => 'Price',
             'duration' => 'Duration',
             'specialist_id' => 'Specialist ID',

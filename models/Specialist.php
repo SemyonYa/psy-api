@@ -7,9 +7,10 @@ use Yii;
 /**
  * This is the model class for table "specialist".
  *
- * @property int $id
+ * @property integer $id
  * @property string $name
- * @property int $user_id
+ * @property string $description
+ * @property integer $user_id
  *
  * @property Good[] $goods
  * @property User $user
@@ -18,7 +19,7 @@ use Yii;
 class Specialist extends \yii\db\ActiveRecord
 {
     /**
-     * {@inheritdoc}
+     * @inheritdoc
      */
     public static function tableName()
     {
@@ -26,12 +27,13 @@ class Specialist extends \yii\db\ActiveRecord
     }
 
     /**
-     * {@inheritdoc}
+     * @inheritdoc
      */
     public function rules()
     {
         return [
             [['name', 'user_id'], 'required'],
+            [['description'], 'string'],
             [['user_id'], 'integer'],
             [['name'], 'string', 'max' => 45],
             [['user_id'], 'exist', 'skipOnError' => true, 'targetClass' => User::className(), 'targetAttribute' => ['user_id' => 'id']],
@@ -39,13 +41,14 @@ class Specialist extends \yii\db\ActiveRecord
     }
 
     /**
-     * {@inheritdoc}
+     * @inheritdoc
      */
     public function attributeLabels()
     {
         return [
             'id' => 'ID',
             'name' => 'Name',
+            'description' => 'Description',
             'user_id' => 'User ID',
         ];
     }

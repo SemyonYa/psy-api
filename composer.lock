@@ -1,10 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8d07ecabcf7400e95033d48a9ef17673",
+    "content-hash": "f0c61806415d0a073b00fc338d6d2968",
     "packages": [
         {
             "name": "bower-asset/bootstrap",
@@ -17,8 +17,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/twbs/bootstrap/zipball/0b9c4a4007c44201dce9a6cc1a38407005c26c86",
-                "reference": "0b9c4a4007c44201dce9a6cc1a38407005c26c86",
-                "shasum": null
+                "reference": "0b9c4a4007c44201dce9a6cc1a38407005c26c86"
             },
             "require": {
                 "bower-asset/jquery": ">=1.9.1,<4.0"
@@ -39,8 +38,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/RobinHerbots/Inputmask/zipball/14873e5775964275d13621cbe2b52e4448af3707",
-                "reference": "14873e5775964275d13621cbe2b52e4448af3707",
-                "shasum": null
+                "reference": "14873e5775964275d13621cbe2b52e4448af3707"
             },
             "require": {
                 "bower-asset/jquery": ">=1.7"
@@ -61,30 +59,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/jquery/jquery-dist/zipball/77d2a51d0520d2ee44173afdf4e40a9201f5964e",
-                "reference": "77d2a51d0520d2ee44173afdf4e40a9201f5964e",
-                "shasum": null
-            },
-            "type": "bower-asset",
-            "license": [
-                "MIT"
-            ]
-        },
-        {
-            "name": "bower-asset/lightbox2",
-            "version": "v2.10.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/lokesh/lightbox2.git",
-                "reference": "351a2ccc87f71bfbbf20ef102a945a12e4c8f2ac"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/lokesh/lightbox2/zipball/351a2ccc87f71bfbbf20ef102a945a12e4c8f2ac",
-                "reference": "351a2ccc87f71bfbbf20ef102a945a12e4c8f2ac",
-                "shasum": null
-            },
-            "require": {
-                "bower-asset/jquery": ">2"
+                "reference": "77d2a51d0520d2ee44173afdf4e40a9201f5964e"
             },
             "type": "bower-asset",
             "license": [
@@ -102,8 +77,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/bestiejs/punycode.js/zipball/38c8d3131a82567bfef18da09f7f4db68c84f8a3",
-                "reference": "38c8d3131a82567bfef18da09f7f4db68c84f8a3",
-                "shasum": null
+                "reference": "38c8d3131a82567bfef18da09f7f4db68c84f8a3"
             },
             "type": "bower-asset"
         },
@@ -118,8 +92,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/yiisoft/jquery-pjax/zipball/aef7b953107264f00234902a3880eb50dafc48be",
-                "reference": "aef7b953107264f00234902a3880eb50dafc48be",
-                "shasum": null
+                "reference": "aef7b953107264f00234902a3880eb50dafc48be"
             },
             "require": {
                 "bower-asset/jquery": ">=1.8"
@@ -237,40 +210,40 @@
             "time": "2017-06-03T02:28:16+00:00"
         },
         {
-            "name": "imagine/imagine",
-            "version": "dev-develop",
+            "name": "lcobucci/clock",
+            "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/avalanche123/Imagine.git",
-                "reference": "f2919909f5c43ddf0aea373f460d86f1ea45811c"
+                "url": "https://github.com/lcobucci/clock.git",
+                "reference": "366773b837b008b7a1b6a890e9afac5f853ae62e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/avalanche123/Imagine/zipball/f2919909f5c43ddf0aea373f460d86f1ea45811c",
-                "reference": "f2919909f5c43ddf0aea373f460d86f1ea45811c",
+                "url": "https://api.github.com/repos/lcobucci/clock/zipball/366773b837b008b7a1b6a890e9afac5f853ae62e",
+                "reference": "366773b837b008b7a1b6a890e9afac5f853ae62e",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.2"
+                "php": "^7.2"
             },
             "require-dev": {
-                "sami/sami": "^3.3",
-                "symfony/phpunit-bridge": "^3.2 || ^4.0"
-            },
-            "suggest": {
-                "ext-gd": "to use the GD implementation",
-                "ext-gmagick": "to use the Gmagick implementation",
-                "ext-imagick": "to use the Imagick implementation"
+                "infection/infection": "^0.13",
+                "lcobucci/coding-standard": "^1.0",
+                "phpstan/phpstan": "^0.10",
+                "phpstan/phpstan-deprecation-rules": "^0.10",
+                "phpstan/phpstan-phpunit": "^0.10",
+                "phpstan/phpstan-strict-rules": "^0.10",
+                "phpunit/phpunit": "^8.4.1"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-develop": "0.7-dev"
+                    "dev-master": "1.3-dev"
                 }
             },
             "autoload": {
-                "psr-0": {
-                    "Imagine": "lib/"
+                "psr-4": {
+                    "Lcobucci\\Clock\\": "src"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -279,44 +252,44 @@
             ],
             "authors": [
                 {
-                    "name": "Bulat Shakirzyanov",
-                    "email": "mallluhuct@gmail.com",
-                    "homepage": "http://avalanche123.com"
+                    "name": "Luís Cobucci",
+                    "email": "lcobucci@gmail.com"
                 }
             ],
-            "description": "Image processing for PHP 5.3",
-            "homepage": "http://imagine.readthedocs.org/",
-            "keywords": [
-                "drawing",
-                "graphics",
-                "image manipulation",
-                "image processing"
-            ],
-            "time": "2018-02-12T12:28:52+00:00"
+            "description": "Yet another clock abstraction",
+            "time": "2019-10-08T05:46:27+00:00"
         },
         {
-            "name": "kartik-v/bootstrap-fileinput",
-            "version": "dev-master",
+            "name": "lcobucci/jose-parsing",
+            "version": "2.2.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/kartik-v/bootstrap-fileinput.git",
-                "reference": "8eef362e2403ed5d8f32f21b0d6d9e673c8181de"
+                "url": "https://github.com/lcobucci/jose-parsing.git",
+                "reference": "ea0eaed79c3a5ca9ece3f824ecfe1e798fd1e1f4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kartik-v/bootstrap-fileinput/zipball/8eef362e2403ed5d8f32f21b0d6d9e673c8181de",
-                "reference": "8eef362e2403ed5d8f32f21b0d6d9e673c8181de",
+                "url": "https://api.github.com/repos/lcobucci/jose-parsing/zipball/ea0eaed79c3a5ca9ece3f824ecfe1e798fd1e1f4",
+                "reference": "ea0eaed79c3a5ca9ece3f824ecfe1e798fd1e1f4",
                 "shasum": ""
+            },
+            "require": {
+                "php": "^7.1"
+            },
+            "require-dev": {
+                "phpmd/phpmd": "^2.3",
+                "phpunit/phpunit": "^6.0",
+                "squizlabs/php_codesniffer": "^2.3"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "4.4.x-dev"
+                    "dev-master": "2.2-dev"
                 }
             },
             "autoload": {
                 "psr-4": {
-                    "kartik\\plugins\\fileinput\\": ""
+                    "Lcobucci\\Jose\\Parsing\\": "src"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -325,171 +298,62 @@
             ],
             "authors": [
                 {
-                    "name": "Kartik Visweswaran",
-                    "email": "kartikv2@gmail.com",
-                    "homepage": "http://www.krajee.com/"
+                    "name": "Luís Otávio Cobucci Oblonczyk",
+                    "email": "lcobucci@gmail.com",
+                    "role": "Developer"
                 }
             ],
-            "description": "An enhanced HTML 5 file input for Bootstrap 3.x with features for file preview for many file types, multiple selection, ajax uploads, and more.",
-            "homepage": "https://github.com/kartik-v/bootstrap-fileinput",
+            "description": "A basic Base64Url and JSON encoding/decoding implementation",
             "keywords": [
-                "ajax",
-                "bootstrap",
-                "delete",
-                "file",
-                "image",
-                "input",
-                "jquery",
-                "multiple",
-                "preview",
-                "progress",
-                "upload"
+                "JOSE",
+                "base64url"
             ],
-            "time": "2018-04-12T08:32:43+00:00"
+            "time": "2017-02-12T22:14:17+00:00"
         },
         {
-            "name": "kartik-v/yii2-krajee-base",
-            "version": "dev-master",
+            "name": "lcobucci/jwt",
+            "version": "4.0.0-alpha3",
             "source": {
                 "type": "git",
-                "url": "https://github.com/kartik-v/yii2-krajee-base.git",
-                "reference": "2f38bde15e03fd42910801fa8c9681ecf4aac789"
+                "url": "https://github.com/lcobucci/jwt.git",
+                "reference": "487d0296cb89d11c023ccacc294f86802cf7bde0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kartik-v/yii2-krajee-base/zipball/2f38bde15e03fd42910801fa8c9681ecf4aac789",
-                "reference": "2f38bde15e03fd42910801fa8c9681ecf4aac789",
+                "url": "https://api.github.com/repos/lcobucci/jwt/zipball/487d0296cb89d11c023ccacc294f86802cf7bde0",
+                "reference": "487d0296cb89d11c023ccacc294f86802cf7bde0",
                 "shasum": ""
             },
             "require": {
-                "yiisoft/yii2-bootstrap": "@dev"
-            },
-            "type": "yii2-extension",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.9.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "kartik\\base\\": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Kartik Visweswaran",
-                    "email": "kartikv2@gmail.com",
-                    "homepage": "http://www.krajee.com/"
-                }
-            ],
-            "description": "Base library and foundation components for all Yii2 Krajee extensions.",
-            "homepage": "https://github.com/kartik-v/yii2-krajee-base",
-            "keywords": [
-                "base",
-                "extension",
-                "foundation",
-                "krajee",
-                "widget",
-                "yii2"
-            ],
-            "time": "2017-11-17T06:34:33+00:00"
-        },
-        {
-            "name": "kartik-v/yii2-widget-fileinput",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/kartik-v/yii2-widget-fileinput.git",
-                "reference": "c5495641c8a86690713eb562e544bf5eaaf727cb"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/kartik-v/yii2-widget-fileinput/zipball/c5495641c8a86690713eb562e544bf5eaaf727cb",
-                "reference": "c5495641c8a86690713eb562e544bf5eaaf727cb",
-                "shasum": ""
-            },
-            "require": {
-                "kartik-v/bootstrap-fileinput": "~4.4",
-                "kartik-v/yii2-krajee-base": "~1.7"
-            },
-            "type": "yii2-extension",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.0.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "kartik\\file\\": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Kartik Visweswaran",
-                    "email": "kartikv2@gmail.com",
-                    "homepage": "http://www.krajee.com/"
-                }
-            ],
-            "description": "An enhanced FileInput widget for Bootstrap 3.x with file preview, multiple selection, and more features (sub repo split from yii2-widgets)",
-            "homepage": "https://github.com/kartik-v/yii2-widget-fileinput",
-            "keywords": [
-                "extension",
-                "file",
-                "form",
-                "input",
-                "jquery",
-                "plugin",
-                "upload",
-                "widget",
-                "yii2"
-            ],
-            "time": "2017-12-06T12:34:31+00:00"
-        },
-        {
-            "name": "mdmsoft/yii2-admin",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/mdmsoft/yii2-admin.git",
-                "reference": "e9cc1d8adc0e34f3a053d172116c6903c2e3c1fb"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/mdmsoft/yii2-admin/zipball/e9cc1d8adc0e34f3a053d172116c6903c2e3c1fb",
-                "reference": "e9cc1d8adc0e34f3a053d172116c6903c2e3c1fb",
-                "shasum": ""
-            },
-            "require": {
-                "yiisoft/yii2": "~2.0.7"
+                "ext-mbstring": "*",
+                "ext-openssl": "*",
+                "lcobucci/clock": "^1.0",
+                "lcobucci/jose-parsing": "~2.1",
+                "php": "^7.2"
             },
             "require-dev": {
-                "yiisoft/yii2-codeception": "~2.0"
+                "infection/infection": "^0.12",
+                "lcobucci/coding-standard": "^2.0",
+                "mikey179/vfsstream": "^1.6",
+                "phpbench/phpbench": "dev-master@dev",
+                "phpmd/phpmd": "^2.5",
+                "phpstan/phpstan": "^0.11",
+                "phpstan/phpstan-deprecation-rules": "^0.11",
+                "phpstan/phpstan-phpunit": "^0.11",
+                "phpstan/phpstan-strict-rules": "^0.11",
+                "phpunit/php-invoker": "^2.0",
+                "phpunit/phpunit": "^8.0",
+                "squizlabs/php_codesniffer": "^3.2"
             },
-            "suggest": {
-                "yiisoft/yii2-bootstrap": "Used when using layout 'left-menu', 'right-menu' or 'top-menu'"
-            },
-            "type": "yii2-extension",
+            "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-1.0.master": "1.0.x-dev",
-                    "dev-master": "2.x-dev"
-                },
-                "asset-installer-paths": {
-                    "npm-asset-library": "vendor/npm",
-                    "bower-asset-library": "vendor/bower"
+                    "dev-master": "4.0-dev"
                 }
             },
             "autoload": {
                 "psr-4": {
-                    "mdm\\admin\\": ""
+                    "Lcobucci\\JWT\\": "src"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -498,156 +362,17 @@
             ],
             "authors": [
                 {
-                    "name": "Misbahul Munir",
-                    "email": "misbahuldmunir@gmail.com"
+                    "name": "Luís Cobucci",
+                    "email": "lcobucci@gmail.com",
+                    "role": "Developer"
                 }
             ],
-            "description": "RBAC Auth manager for Yii2 ",
+            "description": "A simple library to work with JSON Web Token and JSON Web Signature",
             "keywords": [
-                "admin",
-                "auth",
-                "rbac",
-                "yii"
+                "JWS",
+                "jwt"
             ],
-            "time": "2017-11-18T13:27:11+00:00"
-        },
-        {
-            "name": "noam148/yii2-image-manager",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/noam148/yii2-image-manager.git",
-                "reference": "ac968c0b8ee112b5fa69f5d918eb22630f4485cb"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/noam148/yii2-image-manager/zipball/ac968c0b8ee112b5fa69f5d918eb22630f4485cb",
-                "reference": "ac968c0b8ee112b5fa69f5d918eb22630f4485cb",
-                "shasum": ""
-            },
-            "require": {
-                "kartik-v/yii2-widget-fileinput": "@dev",
-                "noam148/yii2-image-resize": "*",
-                "yiisoft/yii2": "*"
-            },
-            "type": "yii2-extension",
-            "autoload": {
-                "psr-4": {
-                    "noam148\\imagemanager\\": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Noam148",
-                    "homepage": "https://github.com/noam148/"
-                }
-            ],
-            "description": "A Yii2 module/widget for upload and cropping images",
-            "homepage": "https://github.com/noam148/yii2-image-manager",
-            "keywords": [
-                "crop",
-                "extension",
-                "image",
-                "manager",
-                "module",
-                "upload",
-                "widget",
-                "yii2"
-            ],
-            "time": "2018-02-18T20:13:22+00:00"
-        },
-        {
-            "name": "noam148/yii2-image-resize",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/noam148/yii2-image-resize.git",
-                "reference": "32c5adf7211e06cefc6861a2164855573e968038"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/noam148/yii2-image-resize/zipball/32c5adf7211e06cefc6861a2164855573e968038",
-                "reference": "32c5adf7211e06cefc6861a2164855573e968038",
-                "shasum": ""
-            },
-            "require": {
-                "yiisoft/yii2": "*",
-                "yiisoft/yii2-imagine": "*"
-            },
-            "type": "yii2-extension",
-            "autoload": {
-                "psr-4": {
-                    "noam148\\imageresize\\": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Noam148",
-                    "homepage": "https://github.com/noam148/"
-                }
-            ],
-            "description": "A Yii2 component for resizing images (on the fly)",
-            "homepage": "https://github.com/noam148/yii2-image-resize",
-            "keywords": [
-                "component",
-                "extension",
-                "image",
-                "on-the-fly",
-                "resize",
-                "yii2"
-            ],
-            "time": "2018-02-18T19:23:04+00:00"
-        },
-        {
-            "name": "sibds/yii2-sberbank-payment",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/sibds/yii2-sberbank-payment.git",
-                "reference": "7f5dc77744ae19c23b723b7ad8668c1c135dcb3a"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/sibds/yii2-sberbank-payment/zipball/7f5dc77744ae19c23b723b7ad8668c1c135dcb3a",
-                "reference": "7f5dc77744ae19c23b723b7ad8668c1c135dcb3a",
-                "shasum": ""
-            },
-            "require": {
-                "yiisoft/yii2": "~2.0.0"
-            },
-            "type": "yii2-extension",
-            "autoload": {
-                "psr-4": {
-                    "sibds\\payment\\sberbank\\": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Vadim Mazur",
-                    "email": "mazurva@gmail.com"
-                }
-            ],
-            "description": "Payment widget for sberbank ",
-            "keywords": [
-                " mazurva",
-                " payment",
-                " sberbank",
-                " sibds",
-                "yii2"
-            ],
-            "time": "2017-06-02T13:02:58+00:00"
+            "time": "2019-04-16T11:51:01+00:00"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -704,107 +429,25 @@
             "time": "2017-05-01T15:54:03+00:00"
         },
         {
-            "name": "wadeshuler/yii2-ckeditor-cdn",
-            "version": "v1.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/WadeShuler/yii2-ckeditor-cdn.git",
-                "reference": "86fc388023fc8f4f2be13fcd0da7410b1375386b"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/WadeShuler/yii2-ckeditor-cdn/zipball/86fc388023fc8f4f2be13fcd0da7410b1375386b",
-                "reference": "86fc388023fc8f4f2be13fcd0da7410b1375386b",
-                "shasum": ""
-            },
-            "type": "yii2-extension",
-            "autoload": {
-                "psr-4": {
-                    "wadeshuler\\ckeditor\\": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Wade Shuler",
-                    "email": "wadeshuler@users.noreply.github.com"
-                }
-            ],
-            "description": "My restriction free version of a CKEditor CDN extension for Yii2",
-            "keywords": [
-                "CKEditor",
-                "cdn",
-                "extension",
-                "widget",
-                "yii2"
-            ],
-            "time": "2016-08-21T05:12:36+00:00"
-        },
-        {
-            "name": "yeesoft/yii2-lightbox",
-            "version": "0.1.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/yeesoft/yii2-lightbox.git",
-                "reference": "5edee95567964b5c86d6a3b374ec476e9db20337"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/yeesoft/yii2-lightbox/zipball/5edee95567964b5c86d6a3b374ec476e9db20337",
-                "reference": "5edee95567964b5c86d6a3b374ec476e9db20337",
-                "shasum": ""
-            },
-            "require": {
-                "bower-asset/lightbox2": "~2.8",
-                "yiisoft/yii2": "~2.0"
-            },
-            "type": "yii2-extension",
-            "autoload": {
-                "psr-4": {
-                    "yeesoft\\lightbox\\": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "Apache-2.0"
-            ],
-            "authors": [
-                {
-                    "name": "Taras Makitra",
-                    "email": "makitrataras@gmail.com"
-                }
-            ],
-            "description": "Lightbox widget for Yii2",
-            "keywords": [
-                "lightbox",
-                "module",
-                "yii2"
-            ],
-            "time": "2017-03-01T11:30:59+00:00"
-        },
-        {
             "name": "yiisoft/yii2",
-            "version": "2.0.13",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-framework.git",
-                "reference": "7028aaa4e89275b6648497e3255f952ca157c1e3"
+                "reference": "69df72939c71a9104363f74418bc3e94f3cf2fca"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/7028aaa4e89275b6648497e3255f952ca157c1e3",
-                "reference": "7028aaa4e89275b6648497e3255f952ca157c1e3",
+                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/69df72939c71a9104363f74418bc3e94f3cf2fca",
+                "reference": "69df72939c71a9104363f74418bc3e94f3cf2fca",
                 "shasum": ""
             },
             "require": {
                 "bower-asset/inputmask": "~3.2.2 | ~3.3.5",
-                "bower-asset/jquery": "3.2.*@stable | 3.1.*@stable | 2.2.*@stable | 2.1.*@stable | 1.11.*@stable | 1.12.*@stable",
+                "bower-asset/jquery": "3.4.*@stable | 3.3.*@stable | 3.2.*@stable | 3.1.*@stable | 2.2.*@stable | 2.1.*@stable | 1.11.*@stable | 1.12.*@stable",
                 "bower-asset/punycode": "1.3.*",
                 "bower-asset/yii2-pjax": "~2.0.1",
-                "cebe/markdown": "~1.0.0 | ~1.1.0",
+                "cebe/markdown": "~1.0.0 | ~1.1.0 | ~1.2.0",
                 "ext-ctype": "*",
                 "ext-mbstring": "*",
                 "ezyang/htmlpurifier": "~4.6",
@@ -883,7 +526,7 @@
                 "framework",
                 "yii2"
             ],
-            "time": "2017-11-02T21:39:38+00:00"
+            "time": "2019-10-23T07:11:23+00:00"
         },
         {
             "name": "yiisoft/yii2-bootstrap",
@@ -933,23 +576,24 @@
         },
         {
             "name": "yiisoft/yii2-composer",
-            "version": "2.0.5",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-composer.git",
-                "reference": "3f4923c2bde6caf3f5b88cc22fdd5770f52f8df2"
+                "reference": "602673880e00bc2cc6d874b0714382775b372ac2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-composer/zipball/3f4923c2bde6caf3f5b88cc22fdd5770f52f8df2",
-                "reference": "3f4923c2bde6caf3f5b88cc22fdd5770f52f8df2",
+                "url": "https://api.github.com/repos/yiisoft/yii2-composer/zipball/602673880e00bc2cc6d874b0714382775b372ac2",
+                "reference": "602673880e00bc2cc6d874b0714382775b372ac2",
                 "shasum": ""
             },
             "require": {
                 "composer-plugin-api": "^1.0"
             },
             "require-dev": {
-                "composer/composer": "^1.0"
+                "composer/composer": "^1.0",
+                "phpunit/phpunit": "<7"
             },
             "type": "composer-plugin",
             "extra": {
@@ -971,6 +615,10 @@
                 {
                     "name": "Qiang Xue",
                     "email": "qiang.xue@gmail.com"
+                },
+                {
+                    "name": "Carsten Brandt",
+                    "email": "mail@cebe.cc"
                 }
             ],
             "description": "The composer plugin for Yii extension installer",
@@ -979,55 +627,7 @@
                 "extension installer",
                 "yii2"
             ],
-            "time": "2016-12-20T13:26:02+00:00"
-        },
-        {
-            "name": "yiisoft/yii2-imagine",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/yiisoft/yii2-imagine.git",
-                "reference": "ce7fc16e34f7192e5e7f515a8042641125961f1a"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-imagine/zipball/ce7fc16e34f7192e5e7f515a8042641125961f1a",
-                "reference": "ce7fc16e34f7192e5e7f515a8042641125961f1a",
-                "shasum": ""
-            },
-            "require": {
-                "imagine/imagine": "~0.6.0 | ~0.7.1",
-                "yiisoft/yii2": "~2.0.0"
-            },
-            "type": "yii2-extension",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "2.0.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "yii\\imagine\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Antonio Ramirez",
-                    "email": "amigo.cobos@gmail.com"
-                }
-            ],
-            "description": "The Imagine integration for the Yii framework",
-            "keywords": [
-                "helper",
-                "image",
-                "imagine",
-                "yii2"
-            ],
-            "time": "2018-04-08T12:22:32+00:00"
+            "time": "2019-07-16T13:22:50+00:00"
         },
         {
             "name": "yiisoft/yii2-swiftmailer",
@@ -1141,6 +741,27 @@
             "time": "2016-10-30T11:50:56+00:00"
         },
         {
+            "name": "bower-asset/lightbox2",
+            "version": "v2.10.0",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:lokesh/lightbox2.git",
+                "reference": "351a2ccc87f71bfbbf20ef102a945a12e4c8f2ac"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/lokesh/lightbox2/zipball/351a2ccc87f71bfbbf20ef102a945a12e4c8f2ac",
+                "reference": "351a2ccc87f71bfbbf20ef102a945a12e4c8f2ac"
+            },
+            "require": {
+                "bower-asset/jquery": ">2"
+            },
+            "type": "bower-asset",
+            "license": [
+                "MIT"
+            ]
+        },
+        {
             "name": "bower-asset/typeahead.js",
             "version": "v0.11.1",
             "source": {
@@ -1151,8 +772,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/twitter/typeahead.js/zipball/588440f66559714280628a4f9799f0c4eb880a4a",
-                "reference": "588440f66559714280628a4f9799f0c4eb880a4a",
-                "shasum": null
+                "reference": "588440f66559714280628a4f9799f0c4eb880a4a"
             },
             "require": {
                 "bower-asset/jquery": ">=1.7"
@@ -1497,6 +1117,281 @@
             "time": "2017-03-20T17:10:46+00:00"
         },
         {
+            "name": "imagine/imagine",
+            "version": "dev-develop",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/avalanche123/Imagine.git",
+                "reference": "dc162676a50f71379e706599b7f8d58cb1f72330"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/avalanche123/Imagine/zipball/dc162676a50f71379e706599b7f8d58cb1f72330",
+                "reference": "dc162676a50f71379e706599b7f8d58cb1f72330",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "2.2.*",
+                "phpunit/phpunit": "^4.8 || ^5.7 || ^6.5 || ^7.4 || ^8.2"
+            },
+            "suggest": {
+                "ext-gd": "to use the GD implementation",
+                "ext-gmagick": "to use the Gmagick implementation",
+                "ext-imagick": "to use the Imagick implementation"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-develop": "0.7-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Imagine\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Bulat Shakirzyanov",
+                    "email": "mallluhuct@gmail.com",
+                    "homepage": "http://avalanche123.com"
+                }
+            ],
+            "description": "Image processing for PHP 5.3",
+            "homepage": "http://imagine.readthedocs.org/",
+            "keywords": [
+                "drawing",
+                "graphics",
+                "image manipulation",
+                "image processing"
+            ],
+            "time": "2019-07-09T09:32:06+00:00"
+        },
+        {
+            "name": "kartik-v/bootstrap-fileinput",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kartik-v/bootstrap-fileinput.git",
+                "reference": "8eef362e2403ed5d8f32f21b0d6d9e673c8181de"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kartik-v/bootstrap-fileinput/zipball/8eef362e2403ed5d8f32f21b0d6d9e673c8181de",
+                "reference": "8eef362e2403ed5d8f32f21b0d6d9e673c8181de",
+                "shasum": ""
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.4.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "kartik\\plugins\\fileinput\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Kartik Visweswaran",
+                    "email": "kartikv2@gmail.com",
+                    "homepage": "http://www.krajee.com/"
+                }
+            ],
+            "description": "An enhanced HTML 5 file input for Bootstrap 3.x with features for file preview for many file types, multiple selection, ajax uploads, and more.",
+            "homepage": "https://github.com/kartik-v/bootstrap-fileinput",
+            "keywords": [
+                "ajax",
+                "bootstrap",
+                "delete",
+                "file",
+                "image",
+                "input",
+                "jquery",
+                "multiple",
+                "preview",
+                "progress",
+                "upload"
+            ],
+            "time": "2018-04-12T08:32:43+00:00"
+        },
+        {
+            "name": "kartik-v/yii2-krajee-base",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kartik-v/yii2-krajee-base.git",
+                "reference": "2f38bde15e03fd42910801fa8c9681ecf4aac789"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kartik-v/yii2-krajee-base/zipball/2f38bde15e03fd42910801fa8c9681ecf4aac789",
+                "reference": "2f38bde15e03fd42910801fa8c9681ecf4aac789",
+                "shasum": ""
+            },
+            "require": {
+                "yiisoft/yii2-bootstrap": "@dev"
+            },
+            "type": "yii2-extension",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.9.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "kartik\\base\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Kartik Visweswaran",
+                    "email": "kartikv2@gmail.com",
+                    "homepage": "http://www.krajee.com/"
+                }
+            ],
+            "description": "Base library and foundation components for all Yii2 Krajee extensions.",
+            "homepage": "https://github.com/kartik-v/yii2-krajee-base",
+            "keywords": [
+                "base",
+                "extension",
+                "foundation",
+                "krajee",
+                "widget",
+                "yii2"
+            ],
+            "time": "2017-11-17T06:34:33+00:00"
+        },
+        {
+            "name": "kartik-v/yii2-widget-fileinput",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kartik-v/yii2-widget-fileinput.git",
+                "reference": "7a66622a4077f86170aed338dce8778e7f6b5af9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kartik-v/yii2-widget-fileinput/zipball/7a66622a4077f86170aed338dce8778e7f6b5af9",
+                "reference": "7a66622a4077f86170aed338dce8778e7f6b5af9",
+                "shasum": ""
+            },
+            "require": {
+                "kartik-v/bootstrap-fileinput": ">=5.0.0",
+                "kartik-v/yii2-krajee-base": ">=2.0.0"
+            },
+            "type": "yii2-extension",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "kartik\\file\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Kartik Visweswaran",
+                    "email": "kartikv2@gmail.com",
+                    "homepage": "http://www.krajee.com/"
+                }
+            ],
+            "description": "An enhanced FileInput widget for Bootstrap 3.x & 4.x with file preview, multiple selection, and more features (sub repo split from yii2-widgets)",
+            "homepage": "https://github.com/kartik-v/yii2-widget-fileinput",
+            "keywords": [
+                "extension",
+                "file",
+                "form",
+                "input",
+                "jquery",
+                "plugin",
+                "upload",
+                "widget",
+                "yii2"
+            ],
+            "time": "2019-10-07T11:05:21+00:00"
+        },
+        {
+            "name": "mdmsoft/yii2-admin",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mdmsoft/yii2-admin.git",
+                "reference": "59e65542b1dc1abcf14c62588ea4ae128e08036c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mdmsoft/yii2-admin/zipball/59e65542b1dc1abcf14c62588ea4ae128e08036c",
+                "reference": "59e65542b1dc1abcf14c62588ea4ae128e08036c",
+                "shasum": ""
+            },
+            "require": {
+                "yiisoft/yii2": "~2.0.7"
+            },
+            "require-dev": {
+                "yiisoft/yii2-codeception": "~2.0"
+            },
+            "suggest": {
+                "yiisoft/yii2-bootstrap": "Used when using layout 'left-menu', 'right-menu' or 'top-menu'"
+            },
+            "type": "yii2-extension",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.0.master": "1.0.x-dev",
+                    "dev-master": "2.x-dev"
+                },
+                "asset-installer-paths": {
+                    "npm-asset-library": "vendor/npm",
+                    "bower-asset-library": "vendor/bower"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "mdm\\admin\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Misbahul Munir",
+                    "email": "misbahuldmunir@gmail.com"
+                }
+            ],
+            "description": "RBAC Auth manager for Yii2 ",
+            "keywords": [
+                "admin",
+                "auth",
+                "rbac",
+                "yii"
+            ],
+            "time": "2018-11-12T12:35:44+00:00"
+        },
+        {
             "name": "myclabs/deep-copy",
             "version": "1.7.0",
             "source": {
@@ -1540,6 +1435,101 @@
                 "object graph"
             ],
             "time": "2017-10-19T19:58:43+00:00"
+        },
+        {
+            "name": "noam148/yii2-image-manager",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/noam148/yii2-image-manager.git",
+                "reference": "6e2216d7d2415b548ec6ae2ab25019e24b905a69"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/noam148/yii2-image-manager/zipball/6e2216d7d2415b548ec6ae2ab25019e24b905a69",
+                "reference": "6e2216d7d2415b548ec6ae2ab25019e24b905a69",
+                "shasum": ""
+            },
+            "require": {
+                "kartik-v/yii2-widget-fileinput": "@dev",
+                "noam148/yii2-image-resize": "*",
+                "yiisoft/yii2": "*"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "noam148\\imagemanager\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Noam148",
+                    "homepage": "https://github.com/noam148/"
+                }
+            ],
+            "description": "A Yii2 module/widget for upload and cropping images",
+            "homepage": "https://github.com/noam148/yii2-image-manager",
+            "keywords": [
+                "crop",
+                "extension",
+                "image",
+                "manager",
+                "module",
+                "upload",
+                "widget",
+                "yii2"
+            ],
+            "time": "2019-05-16T06:28:53+00:00"
+        },
+        {
+            "name": "noam148/yii2-image-resize",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/noam148/yii2-image-resize.git",
+                "reference": "32c5adf7211e06cefc6861a2164855573e968038"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/noam148/yii2-image-resize/zipball/32c5adf7211e06cefc6861a2164855573e968038",
+                "reference": "32c5adf7211e06cefc6861a2164855573e968038",
+                "shasum": ""
+            },
+            "require": {
+                "yiisoft/yii2": "*",
+                "yiisoft/yii2-imagine": "*"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "noam148\\imageresize\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Noam148",
+                    "homepage": "https://github.com/noam148/"
+                }
+            ],
+            "description": "A Yii2 component for resizing images (on the fly)",
+            "homepage": "https://github.com/noam148/yii2-image-resize",
+            "keywords": [
+                "component",
+                "extension",
+                "image",
+                "on-the-fly",
+                "resize",
+                "yii2"
+            ],
+            "time": "2018-02-18T19:23:04+00:00"
         },
         {
             "name": "phar-io/manifest",
@@ -2281,6 +2271,7 @@
                 "mock",
                 "xunit"
             ],
+            "abandoned": true,
             "time": "2017-08-03T14:08:16+00:00"
         },
         {
@@ -2940,6 +2931,49 @@
             "time": "2016-10-03T07:35:21+00:00"
         },
         {
+            "name": "sibds/yii2-sberbank-payment",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sibds/yii2-sberbank-payment.git",
+                "reference": "13152534e116413137b408787d05e9ceea6e31ca"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sibds/yii2-sberbank-payment/zipball/13152534e116413137b408787d05e9ceea6e31ca",
+                "reference": "13152534e116413137b408787d05e9ceea6e31ca",
+                "shasum": ""
+            },
+            "require": {
+                "yiisoft/yii2": "~2.0.0"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "sibds\\payment\\sberbank\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Vadim Mazur",
+                    "email": "mazurva@gmail.com"
+                }
+            ],
+            "description": "Payment widget for sberbank ",
+            "keywords": [
+                " mazurva",
+                " payment",
+                " sberbank",
+                " sibds",
+                "yii2"
+            ],
+            "time": "2019-04-11T11:27:10+00:00"
+        },
+        {
             "name": "stecman/symfony-console-completion",
             "version": "0.7.0",
             "source": {
@@ -3541,6 +3575,46 @@
             "time": "2017-04-07T12:08:54+00:00"
         },
         {
+            "name": "wadeshuler/yii2-ckeditor-cdn",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/WadeShuler/yii2-ckeditor-cdn.git",
+                "reference": "86fc388023fc8f4f2be13fcd0da7410b1375386b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/WadeShuler/yii2-ckeditor-cdn/zipball/86fc388023fc8f4f2be13fcd0da7410b1375386b",
+                "reference": "86fc388023fc8f4f2be13fcd0da7410b1375386b",
+                "shasum": ""
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "wadeshuler\\ckeditor\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Wade Shuler",
+                    "email": "wadeshuler@users.noreply.github.com"
+                }
+            ],
+            "description": "My restriction free version of a CKEditor CDN extension for Yii2",
+            "keywords": [
+                "CKEditor",
+                "cdn",
+                "extension",
+                "widget",
+                "yii2"
+            ],
+            "time": "2016-08-21T05:12:36+00:00"
+        },
+        {
             "name": "webmozart/assert",
             "version": "1.2.0",
             "source": {
@@ -3589,6 +3663,48 @@
                 "validate"
             ],
             "time": "2016-11-23T20:04:58+00:00"
+        },
+        {
+            "name": "yeesoft/yii2-lightbox",
+            "version": "0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/yeesoft/yii2-lightbox.git",
+                "reference": "5edee95567964b5c86d6a3b374ec476e9db20337"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/yeesoft/yii2-lightbox/zipball/5edee95567964b5c86d6a3b374ec476e9db20337",
+                "reference": "5edee95567964b5c86d6a3b374ec476e9db20337",
+                "shasum": ""
+            },
+            "require": {
+                "bower-asset/lightbox2": "~2.8",
+                "yiisoft/yii2": "~2.0"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "yeesoft\\lightbox\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Taras Makitra",
+                    "email": "makitrataras@gmail.com"
+                }
+            ],
+            "description": "Lightbox widget for Yii2",
+            "keywords": [
+                "lightbox",
+                "module",
+                "yii2"
+            ],
+            "time": "2017-03-01T11:30:59+00:00"
         },
         {
             "name": "yiisoft/yii2-debug",
@@ -3736,11 +3852,64 @@
                 "yii2"
             ],
             "time": "2016-03-18T14:09:46+00:00"
+        },
+        {
+            "name": "yiisoft/yii2-imagine",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/yiisoft/yii2-imagine.git",
+                "reference": "fed6cd66c7b9b35eb0dbf1fa88229d6400e1053d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/yiisoft/yii2-imagine/zipball/fed6cd66c7b9b35eb0dbf1fa88229d6400e1053d",
+                "reference": "fed6cd66c7b9b35eb0dbf1fa88229d6400e1053d",
+                "shasum": ""
+            },
+            "require": {
+                "imagine/imagine": "^0.6 | ^0.7 | ^1.0",
+                "yiisoft/yii2": "~2.0.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "<7"
+            },
+            "type": "yii2-extension",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "yii\\imagine\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Antonio Ramirez",
+                    "email": "amigo.cobos@gmail.com"
+                }
+            ],
+            "description": "The Imagine integration for the Yii framework",
+            "keywords": [
+                "helper",
+                "image",
+                "imagine",
+                "yii2"
+            ],
+            "time": "2019-06-04T12:39:11+00:00"
         }
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "lcobucci/jwt": 15
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {

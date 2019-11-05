@@ -15,14 +15,10 @@
     "minimum-stability": "dev",
     "require": {
         "php": ">=5.4.0",
-        "yiisoft/yii2": "~2.0.5",
+        "yiisoft/yii2": "~2.0.14",
         "yiisoft/yii2-bootstrap": "~2.0.0",
-        "yiisoft/yii2-swiftmailer": "~2.0.0",
-        "sibds/yii2-sberbank-payment": "*",
-        "mdmsoft/yii2-admin": "~2.0",
-        "wadeshuler/yii2-ckeditor-cdn": "~1.0",
-        "yeesoft/yii2-lightbox": "~0.1.0",
-        "noam148/yii2-image-manager": "*"
+        "yiisoft/yii2-swiftmailer": "~2.0.0 || ~2.1.0",
+        "lcobucci/jwt": "~3.3"
     },
     "require-dev": {
         "yiisoft/yii2-debug": "~2.0.0",

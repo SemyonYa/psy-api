@@ -7,22 +7,20 @@ use Yii;
 /**
  * This is the model class for table "seance".
  *
- * @property int $id
+ * @property integer $id
+ * @property string $date
  * @property string $time
- * @property int $duration
- * @property int $workday_id
- * @property int $seance_status_id
- * @property int $good_id
- * @property int $price
+ * @property integer $duration
+ * @property integer $seance_status
+ * @property integer $good_id
+ * @property integer $price
  *
  * @property Good $good
- * @property SeanceStatus $seanceStatus
- * @property Workday $workday
  */
 class Seance extends \yii\db\ActiveRecord
 {
     /**
-     * {@inheritdoc}
+     * @inheritdoc
      */
     public static function tableName()
     {
@@ -30,31 +28,29 @@ class Seance extends \yii\db\ActiveRecord
     }
 
     /**
-     * {@inheritdoc}
+     * @inheritdoc
      */
     public function rules()
     {
         return [
-            [['time', 'duration', 'workday_id', 'seance_status_id', 'good_id', 'price'], 'required'],
-            [['time'], 'safe'],
-            [['duration', 'workday_id', 'seance_status_id', 'good_id', 'price'], 'integer'],
+            [['date', 'time', 'duration', 'seance_status', 'good_id', 'price'], 'required'],
+            [['date', 'time'], 'safe'],
+            [['duration', 'seance_status', 'good_id', 'price'], 'integer'],
             [['good_id'], 'exist', 'skipOnError' => true, 'targetClass' => Good::className(), 'targetAttribute' => ['good_id' => 'id']],
-            [['seance_status_id'], 'exist', 'skipOnError' => true, 'targetClass' => SeanceStatus::className(), 'targetAttribute' => ['seance_status_id' => 'id']],
-            [['workday_id'], 'exist', 'skipOnError' => true, 'targetClass' => Workday::className(), 'targetAttribute' => ['workday_id' => 'id']],
         ];
     }
 
     /**
-     * {@inheritdoc}
+     * @inheritdoc
      */
     public function attributeLabels()
     {
         return [
             'id' => 'ID',
+            'date' => 'Date',
             'time' => 'Time',
             'duration' => 'Duration',
-            'workday_id' => 'Workday ID',
-            'seance_status_id' => 'Seance Status ID',
+            'seance_status' => 'Seance Status',
             'good_id' => 'Good ID',
             'price' => 'Price',
         ];
@@ -66,21 +62,5 @@ class Seance extends \yii\db\ActiveRecord
     public function getGood()
     {
         return $this->hasOne(Good::className(), ['id' => 'good_id']);
-    }
-
-    /**
-     * @return \yii\db\ActiveQuery
-     */
-    public function getSeanceStatus()
-    {
-        return $this->hasOne(SeanceStatus::className(), ['id' => 'seance_status_id']);
-    }
-
-    /**
-     * @return \yii\db\ActiveQuery
-     */
-    public function getWorkday()
-    {
-        return $this->hasOne(Workday::className(), ['id' => 'workday_id']);
     }
 }
