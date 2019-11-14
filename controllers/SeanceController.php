@@ -5,7 +5,6 @@ namespace app\controllers;
 use app\models\Good;
 use app\models\Seance;
 use app\models\Specialist;
-use app\models\Workday;
 use Yii;
 use yii\helpers\Json;
 use yii\web\ForbiddenHttpException;
@@ -27,56 +26,19 @@ class SeanceController extends ManagerController
         return $seance->id;
     }
 
-    public function createWorkday($date, $spec_id)
-    {
-        $currentWorkday = Workday::findOne(['date' => $date, 'specialist_id' => $spec_id]);
-        if ($currentWorkday == null) {
-            $workday = new Workday();
-            $workday->specialist_id = $spec_id;
-            $workday->date = $date;
-            $workday->save();
-        }
-    }
-
-    public function checkWorkday($date, $spec_id)
-    {
-        $good_ids = $this->getSpecialistGoodIds($spec_id);
-        $seance = Seance::find()->where(['date' => $date])->andWhere(['in', 'good_id', $good_ids])->one();
-        if ($seance) {
-            $this->createWorkday($date, $spec_id);
-        } else {
-            $wd = Workday::find()->where(['date' => $date, 'specialist_id' => $spec_id])->one();
-            if ($wd) {
-                $wd->delete();
-            }
-
-        }
-    }
-
     public function checkExist()
-    {
-
-    }
+    { }
 
     public function getSpecialistGoodIds($spec_id)
     {
-        $goods = Good::find()->where(['specialist_id' => $spec_id])->all();
-        $good_ids = [];
-        foreach ($goods as $g) {
-            $good_ids[] = $g->id;
-        }
-        return $good_ids;
+        return Good::find()->where(['specialist_id' => $spec_id])->select(['id'])->column();
     }
 
     public function actionAll()
     {
         $req = Yii::$app->request;
         $spec_id = $req->get('specialistId');
-        $goods = Good::find()->where(['specialist_id' => $spec_id])->all();
-        $good_ids = [];
-        foreach ($goods as $g) {
-            $good_ids[] = $g->id;
-        }
+        $good_ids = $this->getSpecialistGoodIds($spec_id);
         $date = $req->get('date');
         $seances = Seance::find()->where(['in', 'good_id', $good_ids])->andWhere(['date' => $date])->orderBy('date')->asArray()->all();
 
@@ -86,7 +48,6 @@ class SeanceController extends ManagerController
     public function actionOne($id)
     {
         return Json::encode(Seance::find()->where(['id' => $id])->asArray()->one());
-
     }
 
     public function actionCreate()
@@ -100,7 +61,6 @@ class SeanceController extends ManagerController
         $price = $req->post('price');
         $seance_status = $req->post('seanceStatus');
         if ($this->create($date, $time, $price, $duration, $good_id)) {
-            $this->createWorkday($date, $spec_id);
             return Json::encode(true);
         }
         return Json::encode(false);
@@ -114,7 +74,6 @@ class SeanceController extends ManagerController
 
         $id = $req->post('id');
         $seance = Seance::findOne($id);
-        $old_date = $seance->date;
         $seance->date = $req->post('date');
         $seance->time = $req->post('time');
         $seance->duration = $req->post('duration');
@@ -122,7 +81,6 @@ class SeanceController extends ManagerController
         $seance->seance_status = $req->post('seanceStatus');
         $seance->good_id = $req->post('goodId');
         if ($seance->save()) {
-            $this->checkWorkday($old_date, $spec_id);
             return Json::encode($seance->id);
         }
         return Json::encode(false);
@@ -145,12 +103,12 @@ class SeanceController extends ManagerController
         $req = Yii::$app->request;
         $spec_id = $req->post('specialistId');
         $date = $req->post('date');
+
         $good_ids = $this->getSpecialistGoodIds($spec_id);
         $seances_on_delete = Seance::find()->where(['date' => $date])->andWhere(['in', 'good_id', $good_ids])->all();
         foreach ($seances_on_delete as $sd) {
             $sd->delete();
         }
-        $this->checkWorkday($date, $spec_id);
         return Json::encode(true);
     }
 
@@ -163,10 +121,17 @@ class SeanceController extends ManagerController
         $month = (strlen($month) === 1) ? '0' . $month : $month;
         $start = strtotime($year . '-' . $month . '-01T00:00:00');
         $end = strtotime('-1 day', strtotime('+1 month', $start));
-        $workdays = Workday::find()->where(['between', 'date', date('Y-m-d', $start), date('Y-m-d', $end)])->andWhere(['specialist_id' => $spec_id])->all();
+
+        $good_ids = $this->getSpecialistGoodIds($spec_id);
+        
+        $workdays = Seance::find()
+            ->where(['between', 'date', date('Y-m-d', $start), date('Y-m-d', $end)])
+            ->andWhere(['in', 'good_id', $good_ids])->select(['date'])
+            ->distinct()
+            ->column();
         $dates = [];
         foreach ($workdays as $wd) {
-            $dates[] = explode('-', $wd->date)[2] * 1;
+            $dates[] = explode('-', $wd)[2] * 1;
         }
         return Json::encode($dates);
     }
@@ -177,11 +142,8 @@ class SeanceController extends ManagerController
         $date_from = explode('T', $req->post('dateFrom'))[0];
         $spec_id = $req->post('specialistId');
         $date_to = $req->post('dateTo');
-        $goods = Good::find()->where(['specialist_id' => $spec_id])->select('id')->all();
-        $good_ids = [];
-        foreach ($goods as $good) {
-            $good_ids[] = $good->id;
-        }
+
+        $good_ids = $this->getSpecialistGoodIds($spec_id);
 
         $seances_on_delete = Seance::find()->where(['date' => $date_to])->andWhere(['in', 'good_id', $good_ids])->all();
         foreach ($seances_on_delete as $sd) {
@@ -192,7 +154,6 @@ class SeanceController extends ManagerController
         foreach ($current_seances as $s) {
             $this->create($date_to, $s->time, $s->price, $s->duration, $s->good_id);
         }
-        $this->createWorkday($date_to, $spec_id);
         return Json::encode(true);
     }
 
@@ -212,11 +173,6 @@ class SeanceController extends ManagerController
 
         $current_seances = Seance::find()->where(['date' => $from])->andWhere(['in', 'good_id', $good_ids])->all();
 
-        // return Json::encode([
-        //     'from' => strftime('%Y-%m-%d -- %T', $date_from),
-        //     'start' => strftime('%Y-%m-%d -- %T', $date_start),
-        //     'end' => strftime('%Y-%m-%d -- %T', $date_end),
-        // ]);
         $created = [];
         $deleted = [];
         while ($date_from <= $date_end) {
@@ -229,7 +185,6 @@ class SeanceController extends ManagerController
                 foreach ($current_seances as $s) {
                     $created[] = $this->create(strftime('%Y-%m-%d', $date_from), $s->time, $s->price, $s->duration, $s->good_id);
                 }
-                $this->createWorkday(strftime('%Y-%m-%d', $date_from), $spec_id);
             }
             if ($is_weekday == 1) {
                 $date_from = strtotime('+7 days', $date_from);
@@ -237,7 +192,6 @@ class SeanceController extends ManagerController
                 $date_from = strtotime('+1 day', $date_from);
             }
         }
-        // return Json::encode($created);
         return Json::encode(true);
     }
 
@@ -250,11 +204,8 @@ class SeanceController extends ManagerController
         $date = $req->post('date');
         $duration = $req->post('duration');
         $dayFinal = strtotime('+1 day', strtotime($date));
-        $goods = Good::find()->where(['specialist_id' => $spec_id])->select('id')->all();
-        $good_ids = [];
-        foreach ($goods as $good) {
-            $good_ids[] = $good->id;
-        }
+        $good_ids = $this->getSpecialistGoodIds($spec_id);
+
         $seances = Seance::find()->where(['date' => $date])->andWhere(['in', 'good_id', $good_ids])->all();
         foreach ($seances as $seance) {
             $seanceBeginTime = strtotime($date . 'T' . $seance->time);
@@ -289,13 +240,9 @@ class SeanceController extends ManagerController
         $duration = $req->post('duration');
         $dayFinal = strtotime('+1 day', strtotime($date));
 
-        $goods = Good::find()->where(['specialist_id' => $spec_id])->select('id')->all();
-        $good_ids = [];
-        foreach ($goods as $good) {
-            $good_ids[] = $good->id;
-        }
+        $good_ids = $this->getSpecialistGoodIds($spec_id);
+
         $seances = Seance::find()->where(['date' => $date])->andWhere(['in', 'good_id', $good_ids])->andWhere(['!=', 'id', $id])->all();
-        // return Json::encode($seances);
         foreach ($seances as $seance) {
             $seanceBeginTime = strtotime($date . 'T' . $seance->time);
             $seanceFinalTime = strtotime('+' . $seance->duration . ' minutes', $seanceBeginTime);
