@@ -125,8 +125,13 @@ class ClientController extends Controller
         return Json::encode($seance);
     }
 
+
+
     public function actionBooking()
     {
+        $req = Yii::$app->request;
+        $id = $req->post('id');
+
         return Json::encode(true);
     }
 }
