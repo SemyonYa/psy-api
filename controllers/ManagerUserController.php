@@ -19,7 +19,7 @@ class ManagerUserController extends ManagerController
 
     public function actionOne($id)
     {
-        $q = 'SELECT u.id, u.email, u.phone, u.login, s.id AS specialist_id, s.name FROM user as u INNER JOIN specialist as s ON u.specialist_id = s.id WHERE u.id = :id';
+        $q = 'SELECT u.id, u.email, u.phone, u.login, s.id AS specialist_id, s.name FROM user as u LEFT JOIN specialist as s ON u.specialist_id = s.id WHERE u.id = :id';
         $user = Yii::$app->db->createCommand($q)->bindParam(':id', $id)->queryOne(); 
         return Json::encode($user);
 
@@ -40,6 +40,7 @@ class ManagerUserController extends ManagerController
         $user->login = $req->post('login');
         $user->password_hash = Yii::$app->security->generatePasswordHash($req->post('password'));
         $user->role = 'spec';
+        $user->specialist_id = $req->post('specialistId');
 
         if ($user->save()) {
             return Json::encode($user->id);
@@ -65,19 +66,26 @@ class ManagerUserController extends ManagerController
         return Json::encode(false);
     }
 
-    // public function actionCheckCreateName() {
-    //     $req = Yii::$app->request;
-    //     $user_id = $req->post('userId');
-    //     $name = $req->post('name');
+    public function actionDelete() {
+        $req = Yii::$app->request;
+        $id = $req->post('id');
+        
+        return Json::encode(User::findOne($id)->delete());
+    }
 
-    //     $specialist = Specialist::findOne(['user_id' => $user_id, 'name' => $name]);
-    //     if ($specialist) {
-    //         return Json::encode(['nameIsUsed' => true]);
-    //     } else {
-    //         return Json::encode(null);
-    //     }
+    public function actionValidateCreateUserLogin() {
+        $req = Yii::$app->request;
+        $login = $req->post('login');
+        $current_user_id = $req->post('currentUserId');
 
-    // }
+        $user = User::find()->where(['login' => $login])->andWhere(['!=', 'id', $current_user_id])->one();
+        if ($user) {
+            return Json::encode(['loginIsUsed' => true]);
+        } else {
+            return Json::encode(null);
+        }
+
+    }
 
     // public function actionCheckEditName() {
     //     $req = Yii::$app->request;

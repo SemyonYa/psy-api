@@ -53743,3 +53743,2447 @@ $_SERVER = [
     'argv' => []
     'argc' => 0
 ]
+2019-11-16 21:19:44 [127.0.0.1][-][6np9mrhaah59h3f2mmaag7i988o9qbfj][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "favicon.ico". in C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('favicon.ico', Array)
+#1 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\OSPanel\domains\psy-api\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Страница не найдена. in C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\OSPanel\domains\psy-api\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2019-11-16 21:19:44 [127.0.0.1][-][6np9mrhaah59h3f2mmaag7i988o9qbfj][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => 'eec3b27bc0f244ecc0259414c2ab174211d1864731d2beb078bb4eb52ba14590a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"miphTOsZVOAHAVcD21ftnT3N7XLJ58RI\";}'
+    'PHPSESSID' => '6np9mrhaah59h3f2mmaag7i988o9qbfj'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'psy-api:100'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36'
+    'HTTP_ACCEPT' => 'image/webp,image/apng,image/*,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://psy-api:100/gii'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en-US;q=0.9,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=eec3b27bc0f244ecc0259414c2ab174211d1864731d2beb078bb4eb52ba14590a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22miphTOsZVOAHAVcD21ftnT3N7XLJ58RI%22%3B%7D; PHPSESSID=6np9mrhaah59h3f2mmaag7i988o9qbfj'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP-7.2-x64\\ext;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP-7.2-x64;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\database\\MySQL-5.6\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7.2-x64\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7.2-x64;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'psy-api'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '100'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/psy-api'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/psy-api'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/psy-api/web/index.php'
+    'REMOTE_PORT' => '8121'
+    'REDIRECT_URL' => '/favicon.ico'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/favicon.ico'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1573928384.671
+    'REQUEST_TIME' => 1573928384
+    'argv' => []
+    'argc' => 0
+]
+2019-11-16 22:40:57 [127.0.0.1][-][-][error][yii\db\IntegrityException] PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'specialist_id' cannot be null in C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\db\Command.php:1290
+Stack trace:
+#0 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\db\Command.php(1290): PDOStatement->execute()
+#1 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\db\Command.php(1091): yii\db\Command->internalExecute('INSERT INTO `us...')
+#2 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\db\Schema.php(432): yii\db\Command->execute()
+#3 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\db\ActiveRecord.php(600): yii\db\Schema->insert('user', Array)
+#4 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\db\ActiveRecord.php(566): yii\db\ActiveRecord->insertInternal(NULL)
+#5 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\db\BaseActiveRecord.php(678): yii\db\ActiveRecord->insert(true, NULL)
+#6 C:\OSPanel\domains\psy-api\controllers\ManagerUserController.php(45): yii\db\BaseActiveRecord->save()
+#7 [internal function]: app\controllers\ManagerUserController->actionCreate()
+#8 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#9 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#10 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('create', Array)
+#11 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('manager-user/cr...', Array)
+#12 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 C:\OSPanel\domains\psy-api\web\index.php(12): yii\base\Application->run()
+#14 {main}
+
+Next yii\db\IntegrityException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'specialist_id' cannot be null
+The SQL being executed was: INSERT INTO `user` (`organization_name`, `specialists_quantity`, `email`, `phone`, `parent_user_id`, `login`, `password_hash`, `role`, `specialist_id`) VALUES ('Self-NN', 0, 'qwe@rty', '1231231231', 11, 'pashkov_spec', '$2y$13$EqDPwQoyJzb/UWKHkIri9.pFVuuMORnwBqiRXJAN0.5JUHHZqxQbG', 'spec', NULL) in C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\db\Schema.php:674
+Stack trace:
+#0 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\db\Command.php(1295): yii\db\Schema->convertException(Object(PDOException), 'INSERT INTO `us...')
+#1 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\db\Command.php(1091): yii\db\Command->internalExecute('INSERT INTO `us...')
+#2 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\db\Schema.php(432): yii\db\Command->execute()
+#3 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\db\ActiveRecord.php(600): yii\db\Schema->insert('user', Array)
+#4 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\db\ActiveRecord.php(566): yii\db\ActiveRecord->insertInternal(NULL)
+#5 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\db\BaseActiveRecord.php(678): yii\db\ActiveRecord->insert(true, NULL)
+#6 C:\OSPanel\domains\psy-api\controllers\ManagerUserController.php(45): yii\db\BaseActiveRecord->save()
+#7 [internal function]: app\controllers\ManagerUserController->actionCreate()
+#8 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#9 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#10 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('create', Array)
+#11 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('manager-user/cr...', Array)
+#12 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 C:\OSPanel\domains\psy-api\web\index.php(12): yii\base\Application->run()
+#14 {main}
+Additional Information:
+Array
+(
+    [0] => 23000
+    [1] => 1048
+    [2] => Column 'specialist_id' cannot be null
+)
+
+2019-11-16 22:40:56 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'psy-api:100'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '112'
+    'HTTP_ACCEPT' => 'application/json, text/plain, */*'
+    'HTTP_ORIGIN' => 'http://localhost:8100'
+    'HTTP_PSYAUTH' => 'jnmYdJcaOgwF5+bg4zN2w1lxdGRUqrZciui5oQxRn1qcRtMDh0QYvNPTIw1BpeQ49R2CCFGZBYOfruFQIb66RSC3rPrRcaa7PG0kTk7n5BkqWHTQ1pL3olNz+2uwK5C3kl/Pepx0zBlRCaen0RRjB3CaAfFapNFLpYYthKeB+UrJ0FpMjDrq/ghGIKE1rwlj'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36'
+    'CONTENT_TYPE' => 'application/json'
+    'HTTP_REFERER' => 'http://localhost:8100/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en-US;q=0.9,en;q=0.8'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP-7.2-x64\\ext;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP-7.2-x64;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\database\\MySQL-5.6\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7.2-x64\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7.2-x64;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'psy-api'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '100'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/psy-api'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/psy-api'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/psy-api/web/index.php'
+    'REMOTE_PORT' => '12490'
+    'REDIRECT_URL' => '/manager-user/create'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/manager-user/create'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1573933256.42
+    'REQUEST_TIME' => 1573933256
+    'argv' => []
+    'argc' => 0
+]
+2019-11-16 23:26:36 [127.0.0.1][-][-][error][TypeError] TypeError: Argument 1 passed to app\models\AesToken::decode() must be of the type string, null given, called in C:\OSPanel\domains\psy-api\controllers\ManagerController.php on line 50 and defined in C:\OSPanel\domains\psy-api\models\AesToken.php:25
+Stack trace:
+#0 C:\OSPanel\domains\psy-api\controllers\ManagerController.php(50): app\models\AesToken::decode(NULL)
+#1 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\Controller.php(159): app\controllers\ManagerController->afterAction(Object(yii\base\InlineAction), 'null')
+#2 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('validate-create...', Array)
+#3 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('manager-user/va...', Array)
+#4 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 C:\OSPanel\domains\psy-api\web\index.php(12): yii\base\Application->run()
+#6 {main}
+2019-11-16 23:26:36 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'psy-api:100'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '36'
+    'HTTP_ORIGIN' => 'http://localhost:8100'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36'
+    'CONTENT_TYPE' => 'text/plain;charset=UTF-8'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://localhost:8100/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en-US;q=0.9,en;q=0.8'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP-7.2-x64\\ext;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP-7.2-x64;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\database\\MySQL-5.6\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7.2-x64\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7.2-x64;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'psy-api'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '100'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/psy-api'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/psy-api'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/psy-api/web/index.php'
+    'REMOTE_PORT' => '15194'
+    'REDIRECT_URL' => '/manager-user/validate-create-user-login'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/manager-user/validate-create-user-login'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1573935996.664
+    'REQUEST_TIME' => 1573935996
+    'argv' => []
+    'argc' => 0
+]
+2019-11-16 23:26:36 [127.0.0.1][-][-][error][TypeError] TypeError: Argument 1 passed to app\models\AesToken::decode() must be of the type string, null given, called in C:\OSPanel\domains\psy-api\controllers\ManagerController.php on line 50 and defined in C:\OSPanel\domains\psy-api\models\AesToken.php:25
+Stack trace:
+#0 C:\OSPanel\domains\psy-api\controllers\ManagerController.php(50): app\models\AesToken::decode(NULL)
+#1 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\Controller.php(159): app\controllers\ManagerController->afterAction(Object(yii\base\InlineAction), 'null')
+#2 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('validate-create...', Array)
+#3 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('manager-user/va...', Array)
+#4 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 C:\OSPanel\domains\psy-api\web\index.php(12): yii\base\Application->run()
+#6 {main}
+2019-11-16 23:26:36 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'psy-api:100'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '36'
+    'HTTP_ORIGIN' => 'http://localhost:8100'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36'
+    'CONTENT_TYPE' => 'text/plain;charset=UTF-8'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://localhost:8100/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en-US;q=0.9,en;q=0.8'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP-7.2-x64\\ext;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP-7.2-x64;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\database\\MySQL-5.6\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7.2-x64\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7.2-x64;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'psy-api'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '100'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/psy-api'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/psy-api'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/psy-api/web/index.php'
+    'REMOTE_PORT' => '15203'
+    'REDIRECT_URL' => '/manager-user/validate-create-user-login'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/manager-user/validate-create-user-login'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1573935996.72
+    'REQUEST_TIME' => 1573935996
+    'argv' => []
+    'argc' => 0
+]
+2019-11-16 23:27:46 [127.0.0.1][-][-][error][TypeError] TypeError: Argument 1 passed to app\models\AesToken::decode() must be of the type string, null given, called in C:\OSPanel\domains\psy-api\controllers\ManagerController.php on line 50 and defined in C:\OSPanel\domains\psy-api\models\AesToken.php:25
+Stack trace:
+#0 C:\OSPanel\domains\psy-api\controllers\ManagerController.php(50): app\models\AesToken::decode(NULL)
+#1 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\Controller.php(159): app\controllers\ManagerController->afterAction(Object(yii\base\InlineAction), 'null')
+#2 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('validate-create...', Array)
+#3 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('manager-user/va...', Array)
+#4 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 C:\OSPanel\domains\psy-api\web\index.php(12): yii\base\Application->run()
+#6 {main}
+2019-11-16 23:27:45 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'psy-api:100'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '36'
+    'HTTP_ORIGIN' => 'http://localhost:8100'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36'
+    'CONTENT_TYPE' => 'text/plain;charset=UTF-8'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://localhost:8100/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en-US;q=0.9,en;q=0.8'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP-7.2-x64\\ext;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP-7.2-x64;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\database\\MySQL-5.6\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7.2-x64\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7.2-x64;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'psy-api'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '100'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/psy-api'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/psy-api'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/psy-api/web/index.php'
+    'REMOTE_PORT' => '15280'
+    'REDIRECT_URL' => '/manager-user/validate-create-user-login'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/manager-user/validate-create-user-login'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1573936065.812
+    'REQUEST_TIME' => 1573936065
+    'argv' => []
+    'argc' => 0
+]
+2019-11-16 23:27:46 [127.0.0.1][-][-][error][TypeError] TypeError: Argument 1 passed to app\models\AesToken::decode() must be of the type string, null given, called in C:\OSPanel\domains\psy-api\controllers\ManagerController.php on line 50 and defined in C:\OSPanel\domains\psy-api\models\AesToken.php:25
+Stack trace:
+#0 C:\OSPanel\domains\psy-api\controllers\ManagerController.php(50): app\models\AesToken::decode(NULL)
+#1 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\Controller.php(159): app\controllers\ManagerController->afterAction(Object(yii\base\InlineAction), 'null')
+#2 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('validate-create...', Array)
+#3 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('manager-user/va...', Array)
+#4 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 C:\OSPanel\domains\psy-api\web\index.php(12): yii\base\Application->run()
+#6 {main}
+2019-11-16 23:27:45 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'psy-api:100'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '36'
+    'HTTP_ORIGIN' => 'http://localhost:8100'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36'
+    'CONTENT_TYPE' => 'text/plain;charset=UTF-8'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://localhost:8100/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en-US;q=0.9,en;q=0.8'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP-7.2-x64\\ext;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP-7.2-x64;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\database\\MySQL-5.6\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7.2-x64\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7.2-x64;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'psy-api'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '100'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/psy-api'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/psy-api'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/psy-api/web/index.php'
+    'REMOTE_PORT' => '15286'
+    'REDIRECT_URL' => '/manager-user/validate-create-user-login'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/manager-user/validate-create-user-login'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1573936065.871
+    'REQUEST_TIME' => 1573936065
+    'argv' => []
+    'argc' => 0
+]
+2019-11-16 23:27:55 [127.0.0.1][-][-][error][TypeError] TypeError: Argument 1 passed to app\models\AesToken::decode() must be of the type string, null given, called in C:\OSPanel\domains\psy-api\controllers\ManagerController.php on line 50 and defined in C:\OSPanel\domains\psy-api\models\AesToken.php:25
+Stack trace:
+#0 C:\OSPanel\domains\psy-api\controllers\ManagerController.php(50): app\models\AesToken::decode(NULL)
+#1 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\Controller.php(159): app\controllers\ManagerController->afterAction(Object(yii\base\InlineAction), 'null')
+#2 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('validate-create...', Array)
+#3 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('manager-user/va...', Array)
+#4 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 C:\OSPanel\domains\psy-api\web\index.php(12): yii\base\Application->run()
+#6 {main}
+2019-11-16 23:27:54 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'psy-api:100'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '36'
+    'HTTP_ORIGIN' => 'http://localhost:8100'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36'
+    'CONTENT_TYPE' => 'text/plain;charset=UTF-8'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://localhost:8100/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en-US;q=0.9,en;q=0.8'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP-7.2-x64\\ext;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP-7.2-x64;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\database\\MySQL-5.6\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7.2-x64\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7.2-x64;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'psy-api'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '100'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/psy-api'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/psy-api'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/psy-api/web/index.php'
+    'REMOTE_PORT' => '15303'
+    'REDIRECT_URL' => '/manager-user/validate-create-user-login'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/manager-user/validate-create-user-login'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1573936074.768
+    'REQUEST_TIME' => 1573936074
+    'argv' => []
+    'argc' => 0
+]
+2019-11-16 23:27:55 [127.0.0.1][-][-][error][TypeError] TypeError: Argument 1 passed to app\models\AesToken::decode() must be of the type string, null given, called in C:\OSPanel\domains\psy-api\controllers\ManagerController.php on line 50 and defined in C:\OSPanel\domains\psy-api\models\AesToken.php:25
+Stack trace:
+#0 C:\OSPanel\domains\psy-api\controllers\ManagerController.php(50): app\models\AesToken::decode(NULL)
+#1 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\Controller.php(159): app\controllers\ManagerController->afterAction(Object(yii\base\InlineAction), 'null')
+#2 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('validate-create...', Array)
+#3 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('manager-user/va...', Array)
+#4 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 C:\OSPanel\domains\psy-api\web\index.php(12): yii\base\Application->run()
+#6 {main}
+2019-11-16 23:27:54 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'psy-api:100'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '36'
+    'HTTP_ORIGIN' => 'http://localhost:8100'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36'
+    'CONTENT_TYPE' => 'text/plain;charset=UTF-8'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://localhost:8100/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en-US;q=0.9,en;q=0.8'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP-7.2-x64\\ext;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP-7.2-x64;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\database\\MySQL-5.6\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7.2-x64\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7.2-x64;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'psy-api'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '100'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/psy-api'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/psy-api'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/psy-api/web/index.php'
+    'REMOTE_PORT' => '15287'
+    'REDIRECT_URL' => '/manager-user/validate-create-user-login'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/manager-user/validate-create-user-login'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1573936074.753
+    'REQUEST_TIME' => 1573936074
+    'argv' => []
+    'argc' => 0
+]
+2019-11-16 23:28:03 [127.0.0.1][-][-][error][TypeError] TypeError: Argument 1 passed to app\models\AesToken::decode() must be of the type string, null given, called in C:\OSPanel\domains\psy-api\controllers\ManagerController.php on line 50 and defined in C:\OSPanel\domains\psy-api\models\AesToken.php:25
+Stack trace:
+#0 C:\OSPanel\domains\psy-api\controllers\ManagerController.php(50): app\models\AesToken::decode(NULL)
+#1 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\Controller.php(159): app\controllers\ManagerController->afterAction(Object(yii\base\InlineAction), 'null')
+#2 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('validate-create...', Array)
+#3 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('manager-user/va...', Array)
+#4 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 C:\OSPanel\domains\psy-api\web\index.php(12): yii\base\Application->run()
+#6 {main}
+2019-11-16 23:28:03 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'psy-api:100'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '57'
+    'HTTP_ORIGIN' => 'http://localhost:8100'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36'
+    'CONTENT_TYPE' => 'text/plain;charset=UTF-8'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://localhost:8100/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en-US;q=0.9,en;q=0.8'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP-7.2-x64\\ext;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP-7.2-x64;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\database\\MySQL-5.6\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7.2-x64\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7.2-x64;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'psy-api'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '100'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/psy-api'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/psy-api'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/psy-api/web/index.php'
+    'REMOTE_PORT' => '15304'
+    'REDIRECT_URL' => '/manager-user/validate-create-user-login'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/manager-user/validate-create-user-login'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1573936083.314
+    'REQUEST_TIME' => 1573936083
+    'argv' => []
+    'argc' => 0
+]
+2019-11-16 23:28:03 [127.0.0.1][-][-][error][TypeError] TypeError: Argument 1 passed to app\models\AesToken::decode() must be of the type string, null given, called in C:\OSPanel\domains\psy-api\controllers\ManagerController.php on line 50 and defined in C:\OSPanel\domains\psy-api\models\AesToken.php:25
+Stack trace:
+#0 C:\OSPanel\domains\psy-api\controllers\ManagerController.php(50): app\models\AesToken::decode(NULL)
+#1 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\Controller.php(159): app\controllers\ManagerController->afterAction(Object(yii\base\InlineAction), 'null')
+#2 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('validate-create...', Array)
+#3 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('manager-user/va...', Array)
+#4 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 C:\OSPanel\domains\psy-api\web\index.php(12): yii\base\Application->run()
+#6 {main}
+2019-11-16 23:28:03 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'psy-api:100'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '57'
+    'HTTP_ORIGIN' => 'http://localhost:8100'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36'
+    'CONTENT_TYPE' => 'text/plain;charset=UTF-8'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://localhost:8100/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en-US;q=0.9,en;q=0.8'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP-7.2-x64\\ext;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP-7.2-x64;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\database\\MySQL-5.6\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7.2-x64\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7.2-x64;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'psy-api'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '100'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/psy-api'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/psy-api'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/psy-api/web/index.php'
+    'REMOTE_PORT' => '15329'
+    'REDIRECT_URL' => '/manager-user/validate-create-user-login'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/manager-user/validate-create-user-login'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1573936083.338
+    'REQUEST_TIME' => 1573936083
+    'argv' => []
+    'argc' => 0
+]
+2019-11-16 23:29:53 [127.0.0.1][-][-][error][TypeError] TypeError: Argument 1 passed to app\models\AesToken::decode() must be of the type string, null given, called in C:\OSPanel\domains\psy-api\controllers\ManagerController.php on line 50 and defined in C:\OSPanel\domains\psy-api\models\AesToken.php:25
+Stack trace:
+#0 C:\OSPanel\domains\psy-api\controllers\ManagerController.php(50): app\models\AesToken::decode(NULL)
+#1 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\Controller.php(159): app\controllers\ManagerController->afterAction(Object(yii\base\InlineAction), '{"loginIsUsed":...')
+#2 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('validate-create...', Array)
+#3 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('manager-user/va...', Array)
+#4 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 C:\OSPanel\domains\psy-api\web\index.php(12): yii\base\Application->run()
+#6 {main}
+2019-11-16 23:29:53 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'psy-api:100'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '57'
+    'HTTP_ORIGIN' => 'http://localhost:8100'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36'
+    'CONTENT_TYPE' => 'text/plain;charset=UTF-8'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://localhost:8100/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en-US;q=0.9,en;q=0.8'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP-7.2-x64\\ext;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP-7.2-x64;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\database\\MySQL-5.6\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7.2-x64\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7.2-x64;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'psy-api'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '100'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/psy-api'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/psy-api'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/psy-api/web/index.php'
+    'REMOTE_PORT' => '15451'
+    'REDIRECT_URL' => '/manager-user/validate-create-user-login'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/manager-user/validate-create-user-login'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1573936193.41
+    'REQUEST_TIME' => 1573936193
+    'argv' => []
+    'argc' => 0
+]
+2019-11-16 23:29:53 [127.0.0.1][-][-][error][TypeError] TypeError: Argument 1 passed to app\models\AesToken::decode() must be of the type string, null given, called in C:\OSPanel\domains\psy-api\controllers\ManagerController.php on line 50 and defined in C:\OSPanel\domains\psy-api\models\AesToken.php:25
+Stack trace:
+#0 C:\OSPanel\domains\psy-api\controllers\ManagerController.php(50): app\models\AesToken::decode(NULL)
+#1 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\Controller.php(159): app\controllers\ManagerController->afterAction(Object(yii\base\InlineAction), '{"loginIsUsed":...')
+#2 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('validate-create...', Array)
+#3 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('manager-user/va...', Array)
+#4 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 C:\OSPanel\domains\psy-api\web\index.php(12): yii\base\Application->run()
+#6 {main}
+2019-11-16 23:29:53 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'psy-api:100'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '57'
+    'HTTP_ORIGIN' => 'http://localhost:8100'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36'
+    'CONTENT_TYPE' => 'text/plain;charset=UTF-8'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://localhost:8100/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en-US;q=0.9,en;q=0.8'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP-7.2-x64\\ext;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP-7.2-x64;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\database\\MySQL-5.6\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7.2-x64\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7.2-x64;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'psy-api'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '100'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/psy-api'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/psy-api'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/psy-api/web/index.php'
+    'REMOTE_PORT' => '15458'
+    'REDIRECT_URL' => '/manager-user/validate-create-user-login'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/manager-user/validate-create-user-login'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1573936193.513
+    'REQUEST_TIME' => 1573936193
+    'argv' => []
+    'argc' => 0
+]
+2019-11-16 23:30:00 [127.0.0.1][-][-][error][TypeError] TypeError: Argument 1 passed to app\models\AesToken::decode() must be of the type string, null given, called in C:\OSPanel\domains\psy-api\controllers\ManagerController.php on line 50 and defined in C:\OSPanel\domains\psy-api\models\AesToken.php:25
+Stack trace:
+#0 C:\OSPanel\domains\psy-api\controllers\ManagerController.php(50): app\models\AesToken::decode(NULL)
+#1 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\Controller.php(159): app\controllers\ManagerController->afterAction(Object(yii\base\InlineAction), '{"loginIsUsed":...')
+#2 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('validate-create...', Array)
+#3 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('manager-user/va...', Array)
+#4 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 C:\OSPanel\domains\psy-api\web\index.php(12): yii\base\Application->run()
+#6 {main}
+2019-11-16 23:29:59 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'psy-api:100'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '57'
+    'HTTP_ORIGIN' => 'http://localhost:8100'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36'
+    'CONTENT_TYPE' => 'text/plain;charset=UTF-8'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://localhost:8100/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en-US;q=0.9,en;q=0.8'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP-7.2-x64\\ext;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP-7.2-x64;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\database\\MySQL-5.6\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7.2-x64\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7.2-x64;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'psy-api'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '100'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/psy-api'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/psy-api'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/psy-api/web/index.php'
+    'REMOTE_PORT' => '15472'
+    'REDIRECT_URL' => '/manager-user/validate-create-user-login'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/manager-user/validate-create-user-login'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1573936199.966
+    'REQUEST_TIME' => 1573936199
+    'argv' => []
+    'argc' => 0
+]
+2019-11-16 23:30:00 [127.0.0.1][-][-][error][TypeError] TypeError: Argument 1 passed to app\models\AesToken::decode() must be of the type string, null given, called in C:\OSPanel\domains\psy-api\controllers\ManagerController.php on line 50 and defined in C:\OSPanel\domains\psy-api\models\AesToken.php:25
+Stack trace:
+#0 C:\OSPanel\domains\psy-api\controllers\ManagerController.php(50): app\models\AesToken::decode(NULL)
+#1 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\Controller.php(159): app\controllers\ManagerController->afterAction(Object(yii\base\InlineAction), '{"loginIsUsed":...')
+#2 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('validate-create...', Array)
+#3 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('manager-user/va...', Array)
+#4 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 C:\OSPanel\domains\psy-api\web\index.php(12): yii\base\Application->run()
+#6 {main}
+2019-11-16 23:29:59 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'psy-api:100'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '57'
+    'HTTP_ORIGIN' => 'http://localhost:8100'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36'
+    'CONTENT_TYPE' => 'text/plain;charset=UTF-8'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://localhost:8100/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en-US;q=0.9,en;q=0.8'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP-7.2-x64\\ext;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP-7.2-x64;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\database\\MySQL-5.6\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7.2-x64\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7.2-x64;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'psy-api'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '100'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/psy-api'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/psy-api'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/psy-api/web/index.php'
+    'REMOTE_PORT' => '15459'
+    'REDIRECT_URL' => '/manager-user/validate-create-user-login'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/manager-user/validate-create-user-login'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1573936199.913
+    'REQUEST_TIME' => 1573936199
+    'argv' => []
+    'argc' => 0
+]
+2019-11-16 23:31:36 [127.0.0.1][-][-][error][TypeError] TypeError: Argument 1 passed to app\models\AesToken::decode() must be of the type string, null given, called in C:\OSPanel\domains\psy-api\controllers\ManagerController.php on line 50 and defined in C:\OSPanel\domains\psy-api\models\AesToken.php:25
+Stack trace:
+#0 C:\OSPanel\domains\psy-api\controllers\ManagerController.php(50): app\models\AesToken::decode(NULL)
+#1 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\Controller.php(159): app\controllers\ManagerController->afterAction(Object(yii\base\InlineAction), 'null')
+#2 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('validate-create...', Array)
+#3 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('manager-user/va...', Array)
+#4 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 C:\OSPanel\domains\psy-api\web\index.php(12): yii\base\Application->run()
+#6 {main}
+2019-11-16 23:31:36 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'psy-api:100'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '57'
+    'HTTP_ORIGIN' => 'http://localhost:8100'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36'
+    'CONTENT_TYPE' => 'text/plain;charset=UTF-8'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://localhost:8100/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en-US;q=0.9,en;q=0.8'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP-7.2-x64\\ext;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP-7.2-x64;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\database\\MySQL-5.6\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7.2-x64\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7.2-x64;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'psy-api'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '100'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/psy-api'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/psy-api'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/psy-api/web/index.php'
+    'REMOTE_PORT' => '15574'
+    'REDIRECT_URL' => '/manager-user/validate-create-user-login'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/manager-user/validate-create-user-login'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1573936296.32
+    'REQUEST_TIME' => 1573936296
+    'argv' => []
+    'argc' => 0
+]
+2019-11-16 23:31:36 [127.0.0.1][-][-][error][TypeError] TypeError: Argument 1 passed to app\models\AesToken::decode() must be of the type string, null given, called in C:\OSPanel\domains\psy-api\controllers\ManagerController.php on line 50 and defined in C:\OSPanel\domains\psy-api\models\AesToken.php:25
+Stack trace:
+#0 C:\OSPanel\domains\psy-api\controllers\ManagerController.php(50): app\models\AesToken::decode(NULL)
+#1 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\Controller.php(159): app\controllers\ManagerController->afterAction(Object(yii\base\InlineAction), 'null')
+#2 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('validate-create...', Array)
+#3 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('manager-user/va...', Array)
+#4 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 C:\OSPanel\domains\psy-api\web\index.php(12): yii\base\Application->run()
+#6 {main}
+2019-11-16 23:31:36 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'psy-api:100'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '57'
+    'HTTP_ORIGIN' => 'http://localhost:8100'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36'
+    'CONTENT_TYPE' => 'text/plain;charset=UTF-8'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://localhost:8100/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en-US;q=0.9,en;q=0.8'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP-7.2-x64\\ext;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP-7.2-x64;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\database\\MySQL-5.6\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7.2-x64\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7.2-x64;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'psy-api'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '100'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/psy-api'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/psy-api'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/psy-api/web/index.php'
+    'REMOTE_PORT' => '15568'
+    'REDIRECT_URL' => '/manager-user/validate-create-user-login'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/manager-user/validate-create-user-login'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1573936296.286
+    'REQUEST_TIME' => 1573936296
+    'argv' => []
+    'argc' => 0
+]
+2019-11-16 23:32:28 [127.0.0.1][-][-][error][TypeError] TypeError: Argument 1 passed to app\models\AesToken::decode() must be of the type string, null given, called in C:\OSPanel\domains\psy-api\controllers\ManagerController.php on line 50 and defined in C:\OSPanel\domains\psy-api\models\AesToken.php:25
+Stack trace:
+#0 C:\OSPanel\domains\psy-api\controllers\ManagerController.php(50): app\models\AesToken::decode(NULL)
+#1 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\Controller.php(159): app\controllers\ManagerController->afterAction(Object(yii\base\InlineAction), 'null')
+#2 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('validate-create...', Array)
+#3 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('manager-user/va...', Array)
+#4 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 C:\OSPanel\domains\psy-api\web\index.php(12): yii\base\Application->run()
+#6 {main}
+2019-11-16 23:32:28 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'psy-api:100'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '57'
+    'HTTP_ORIGIN' => 'http://localhost:8100'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36'
+    'CONTENT_TYPE' => 'text/plain;charset=UTF-8'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://localhost:8100/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en-US;q=0.9,en;q=0.8'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP-7.2-x64\\ext;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP-7.2-x64;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\database\\MySQL-5.6\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7.2-x64\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7.2-x64;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'psy-api'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '100'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/psy-api'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/psy-api'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/psy-api/web/index.php'
+    'REMOTE_PORT' => '15641'
+    'REDIRECT_URL' => '/manager-user/validate-create-user-login'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/manager-user/validate-create-user-login'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1573936348.427
+    'REQUEST_TIME' => 1573936348
+    'argv' => []
+    'argc' => 0
+]
+2019-11-16 23:32:28 [127.0.0.1][-][-][error][TypeError] TypeError: Argument 1 passed to app\models\AesToken::decode() must be of the type string, null given, called in C:\OSPanel\domains\psy-api\controllers\ManagerController.php on line 50 and defined in C:\OSPanel\domains\psy-api\models\AesToken.php:25
+Stack trace:
+#0 C:\OSPanel\domains\psy-api\controllers\ManagerController.php(50): app\models\AesToken::decode(NULL)
+#1 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\Controller.php(159): app\controllers\ManagerController->afterAction(Object(yii\base\InlineAction), 'null')
+#2 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('validate-create...', Array)
+#3 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('manager-user/va...', Array)
+#4 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 C:\OSPanel\domains\psy-api\web\index.php(12): yii\base\Application->run()
+#6 {main}
+2019-11-16 23:32:28 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'psy-api:100'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '57'
+    'HTTP_ORIGIN' => 'http://localhost:8100'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36'
+    'CONTENT_TYPE' => 'text/plain;charset=UTF-8'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://localhost:8100/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en-US;q=0.9,en;q=0.8'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP-7.2-x64\\ext;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP-7.2-x64;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\database\\MySQL-5.6\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7.2-x64\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7.2-x64;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'psy-api'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '100'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/psy-api'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/psy-api'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/psy-api/web/index.php'
+    'REMOTE_PORT' => '15636'
+    'REDIRECT_URL' => '/manager-user/validate-create-user-login'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/manager-user/validate-create-user-login'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1573936348.386
+    'REQUEST_TIME' => 1573936348
+    'argv' => []
+    'argc' => 0
+]
+2019-11-16 23:33:55 [127.0.0.1][-][-][error][TypeError] TypeError: Argument 1 passed to app\models\AesToken::decode() must be of the type string, null given, called in C:\OSPanel\domains\psy-api\controllers\ManagerController.php on line 50 and defined in C:\OSPanel\domains\psy-api\models\AesToken.php:25
+Stack trace:
+#0 C:\OSPanel\domains\psy-api\controllers\ManagerController.php(50): app\models\AesToken::decode(NULL)
+#1 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\Controller.php(159): app\controllers\ManagerController->afterAction(Object(yii\base\InlineAction), 'null')
+#2 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('validate-create...', Array)
+#3 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('manager-user/va...', Array)
+#4 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 C:\OSPanel\domains\psy-api\web\index.php(12): yii\base\Application->run()
+#6 {main}
+2019-11-16 23:33:55 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'psy-api:100'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '57'
+    'HTTP_ORIGIN' => 'http://localhost:8100'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36'
+    'CONTENT_TYPE' => 'text/plain;charset=UTF-8'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://localhost:8100/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en-US;q=0.9,en;q=0.8'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP-7.2-x64\\ext;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP-7.2-x64;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\database\\MySQL-5.6\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7.2-x64\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7.2-x64;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'psy-api'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '100'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/psy-api'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/psy-api'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/psy-api/web/index.php'
+    'REMOTE_PORT' => '15752'
+    'REDIRECT_URL' => '/manager-user/validate-create-user-login'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/manager-user/validate-create-user-login'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1573936435.158
+    'REQUEST_TIME' => 1573936435
+    'argv' => []
+    'argc' => 0
+]
+2019-11-16 23:33:55 [127.0.0.1][-][-][error][TypeError] TypeError: Argument 1 passed to app\models\AesToken::decode() must be of the type string, null given, called in C:\OSPanel\domains\psy-api\controllers\ManagerController.php on line 50 and defined in C:\OSPanel\domains\psy-api\models\AesToken.php:25
+Stack trace:
+#0 C:\OSPanel\domains\psy-api\controllers\ManagerController.php(50): app\models\AesToken::decode(NULL)
+#1 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\Controller.php(159): app\controllers\ManagerController->afterAction(Object(yii\base\InlineAction), 'null')
+#2 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('validate-create...', Array)
+#3 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('manager-user/va...', Array)
+#4 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 C:\OSPanel\domains\psy-api\web\index.php(12): yii\base\Application->run()
+#6 {main}
+2019-11-16 23:33:55 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'psy-api:100'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '57'
+    'HTTP_ORIGIN' => 'http://localhost:8100'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36'
+    'CONTENT_TYPE' => 'text/plain;charset=UTF-8'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://localhost:8100/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en-US;q=0.9,en;q=0.8'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP-7.2-x64\\ext;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP-7.2-x64;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\database\\MySQL-5.6\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7.2-x64\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7.2-x64;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'psy-api'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '100'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/psy-api'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/psy-api'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/psy-api/web/index.php'
+    'REMOTE_PORT' => '15759'
+    'REDIRECT_URL' => '/manager-user/validate-create-user-login'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/manager-user/validate-create-user-login'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1573936435.213
+    'REQUEST_TIME' => 1573936435
+    'argv' => []
+    'argc' => 0
+]
+2019-11-16 23:34:13 [127.0.0.1][-][-][error][TypeError] TypeError: Argument 1 passed to app\models\AesToken::decode() must be of the type string, null given, called in C:\OSPanel\domains\psy-api\controllers\ManagerController.php on line 50 and defined in C:\OSPanel\domains\psy-api\models\AesToken.php:25
+Stack trace:
+#0 C:\OSPanel\domains\psy-api\controllers\ManagerController.php(50): app\models\AesToken::decode(NULL)
+#1 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\Controller.php(159): app\controllers\ManagerController->afterAction(Object(yii\base\InlineAction), 'null')
+#2 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('validate-create...', Array)
+#3 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('manager-user/va...', Array)
+#4 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 C:\OSPanel\domains\psy-api\web\index.php(12): yii\base\Application->run()
+#6 {main}
+2019-11-16 23:34:13 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'psy-api:100'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '52'
+    'HTTP_ORIGIN' => 'http://localhost:8100'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36'
+    'CONTENT_TYPE' => 'text/plain;charset=UTF-8'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://localhost:8100/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en-US;q=0.9,en;q=0.8'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP-7.2-x64\\ext;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP-7.2-x64;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\database\\MySQL-5.6\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7.2-x64\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7.2-x64;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'psy-api'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '100'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/psy-api'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/psy-api'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/psy-api/web/index.php'
+    'REMOTE_PORT' => '15760'
+    'REDIRECT_URL' => '/manager-user/validate-create-user-login'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/manager-user/validate-create-user-login'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1573936453.814
+    'REQUEST_TIME' => 1573936453
+    'argv' => []
+    'argc' => 0
+]
+2019-11-16 23:34:13 [127.0.0.1][-][-][error][TypeError] TypeError: Argument 1 passed to app\models\AesToken::decode() must be of the type string, null given, called in C:\OSPanel\domains\psy-api\controllers\ManagerController.php on line 50 and defined in C:\OSPanel\domains\psy-api\models\AesToken.php:25
+Stack trace:
+#0 C:\OSPanel\domains\psy-api\controllers\ManagerController.php(50): app\models\AesToken::decode(NULL)
+#1 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\Controller.php(159): app\controllers\ManagerController->afterAction(Object(yii\base\InlineAction), 'null')
+#2 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('validate-create...', Array)
+#3 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('manager-user/va...', Array)
+#4 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 C:\OSPanel\domains\psy-api\web\index.php(12): yii\base\Application->run()
+#6 {main}
+2019-11-16 23:34:13 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'psy-api:100'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '52'
+    'HTTP_ORIGIN' => 'http://localhost:8100'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36'
+    'CONTENT_TYPE' => 'text/plain;charset=UTF-8'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://localhost:8100/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en-US;q=0.9,en;q=0.8'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP-7.2-x64\\ext;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP-7.2-x64;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\database\\MySQL-5.6\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7.2-x64\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7.2-x64;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'psy-api'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '100'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/psy-api'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/psy-api'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/psy-api/web/index.php'
+    'REMOTE_PORT' => '15788'
+    'REDIRECT_URL' => '/manager-user/validate-create-user-login'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/manager-user/validate-create-user-login'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1573936453.846
+    'REQUEST_TIME' => 1573936453
+    'argv' => []
+    'argc' => 0
+]
+2019-11-16 23:35:24 [127.0.0.1][-][-][error][TypeError] TypeError: Argument 1 passed to app\models\AesToken::decode() must be of the type string, null given, called in C:\OSPanel\domains\psy-api\controllers\ManagerController.php on line 50 and defined in C:\OSPanel\domains\psy-api\models\AesToken.php:25
+Stack trace:
+#0 C:\OSPanel\domains\psy-api\controllers\ManagerController.php(50): app\models\AesToken::decode(NULL)
+#1 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\Controller.php(159): app\controllers\ManagerController->afterAction(Object(yii\base\InlineAction), 'null')
+#2 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('validate-create...', Array)
+#3 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('manager-user/va...', Array)
+#4 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 C:\OSPanel\domains\psy-api\web\index.php(12): yii\base\Application->run()
+#6 {main}
+2019-11-16 23:35:23 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'psy-api:100'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '57'
+    'HTTP_ORIGIN' => 'http://localhost:8100'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36'
+    'CONTENT_TYPE' => 'text/plain;charset=UTF-8'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://localhost:8100/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en-US;q=0.9,en;q=0.8'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP-7.2-x64\\ext;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP-7.2-x64;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\database\\MySQL-5.6\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7.2-x64\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7.2-x64;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'psy-api'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '100'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/psy-api'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/psy-api'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/psy-api/web/index.php'
+    'REMOTE_PORT' => '15876'
+    'REDIRECT_URL' => '/manager-user/validate-create-user-login'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/manager-user/validate-create-user-login'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1573936523.905
+    'REQUEST_TIME' => 1573936523
+    'argv' => []
+    'argc' => 0
+]
+2019-11-16 23:35:24 [127.0.0.1][-][-][error][TypeError] TypeError: Argument 1 passed to app\models\AesToken::decode() must be of the type string, null given, called in C:\OSPanel\domains\psy-api\controllers\ManagerController.php on line 50 and defined in C:\OSPanel\domains\psy-api\models\AesToken.php:25
+Stack trace:
+#0 C:\OSPanel\domains\psy-api\controllers\ManagerController.php(50): app\models\AesToken::decode(NULL)
+#1 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\Controller.php(159): app\controllers\ManagerController->afterAction(Object(yii\base\InlineAction), 'null')
+#2 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('validate-create...', Array)
+#3 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('manager-user/va...', Array)
+#4 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 C:\OSPanel\domains\psy-api\web\index.php(12): yii\base\Application->run()
+#6 {main}
+2019-11-16 23:35:23 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'psy-api:100'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '57'
+    'HTTP_ORIGIN' => 'http://localhost:8100'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36'
+    'CONTENT_TYPE' => 'text/plain;charset=UTF-8'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://localhost:8100/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en-US;q=0.9,en;q=0.8'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP-7.2-x64\\ext;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP-7.2-x64;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\database\\MySQL-5.6\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7.2-x64\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7.2-x64;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'psy-api'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '100'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/psy-api'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/psy-api'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/psy-api/web/index.php'
+    'REMOTE_PORT' => '15855'
+    'REDIRECT_URL' => '/manager-user/validate-create-user-login'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/manager-user/validate-create-user-login'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1573936523.885
+    'REQUEST_TIME' => 1573936523
+    'argv' => []
+    'argc' => 0
+]
+2019-11-16 23:37:49 [127.0.0.1][-][-][error][TypeError] TypeError: Argument 1 passed to app\models\AesToken::decode() must be of the type string, null given, called in C:\OSPanel\domains\psy-api\controllers\ManagerController.php on line 50 and defined in C:\OSPanel\domains\psy-api\models\AesToken.php:25
+Stack trace:
+#0 C:\OSPanel\domains\psy-api\controllers\ManagerController.php(50): app\models\AesToken::decode(NULL)
+#1 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\Controller.php(159): app\controllers\ManagerController->afterAction(Object(yii\base\InlineAction), 'null')
+#2 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('validate-create...', Array)
+#3 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('manager-user/va...', Array)
+#4 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 C:\OSPanel\domains\psy-api\web\index.php(12): yii\base\Application->run()
+#6 {main}
+2019-11-16 23:37:49 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'psy-api:100'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '51'
+    'HTTP_ORIGIN' => 'http://localhost:8100'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36'
+    'CONTENT_TYPE' => 'text/plain;charset=UTF-8'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://localhost:8100/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en-US;q=0.9,en;q=0.8'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP-7.2-x64\\ext;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP-7.2-x64;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\database\\MySQL-5.6\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7.2-x64\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7.2-x64;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'psy-api'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '100'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/psy-api'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/psy-api'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/psy-api/web/index.php'
+    'REMOTE_PORT' => '16023'
+    'REDIRECT_URL' => '/manager-user/validate-create-user-login'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/manager-user/validate-create-user-login'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1573936669.202
+    'REQUEST_TIME' => 1573936669
+    'argv' => []
+    'argc' => 0
+]
+2019-11-16 23:37:49 [127.0.0.1][-][-][error][TypeError] TypeError: Argument 1 passed to app\models\AesToken::decode() must be of the type string, null given, called in C:\OSPanel\domains\psy-api\controllers\ManagerController.php on line 50 and defined in C:\OSPanel\domains\psy-api\models\AesToken.php:25
+Stack trace:
+#0 C:\OSPanel\domains\psy-api\controllers\ManagerController.php(50): app\models\AesToken::decode(NULL)
+#1 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\Controller.php(159): app\controllers\ManagerController->afterAction(Object(yii\base\InlineAction), 'null')
+#2 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('validate-create...', Array)
+#3 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('manager-user/va...', Array)
+#4 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 C:\OSPanel\domains\psy-api\web\index.php(12): yii\base\Application->run()
+#6 {main}
+2019-11-16 23:37:49 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'psy-api:100'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '51'
+    'HTTP_ORIGIN' => 'http://localhost:8100'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36'
+    'CONTENT_TYPE' => 'text/plain;charset=UTF-8'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://localhost:8100/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en-US;q=0.9,en;q=0.8'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP-7.2-x64\\ext;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP-7.2-x64;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\database\\MySQL-5.6\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7.2-x64\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7.2-x64;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'psy-api'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '100'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/psy-api'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/psy-api'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/psy-api/web/index.php'
+    'REMOTE_PORT' => '16032'
+    'REDIRECT_URL' => '/manager-user/validate-create-user-login'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/manager-user/validate-create-user-login'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1573936669.217
+    'REQUEST_TIME' => 1573936669
+    'argv' => []
+    'argc' => 0
+]
+2019-11-16 23:39:08 [127.0.0.1][-][-][error][TypeError] TypeError: Argument 1 passed to app\models\AesToken::decode() must be of the type string, null given, called in C:\OSPanel\domains\psy-api\controllers\ManagerController.php on line 50 and defined in C:\OSPanel\domains\psy-api\models\AesToken.php:25
+Stack trace:
+#0 C:\OSPanel\domains\psy-api\controllers\ManagerController.php(50): app\models\AesToken::decode(NULL)
+#1 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\Controller.php(159): app\controllers\ManagerController->afterAction(Object(yii\base\InlineAction), 'null')
+#2 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('validate-create...', Array)
+#3 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('manager-user/va...', Array)
+#4 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 C:\OSPanel\domains\psy-api\web\index.php(12): yii\base\Application->run()
+#6 {main}
+2019-11-16 23:39:08 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'psy-api:100'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '57'
+    'HTTP_ORIGIN' => 'http://localhost:8100'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36'
+    'CONTENT_TYPE' => 'text/plain;charset=UTF-8'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://localhost:8100/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en-US;q=0.9,en;q=0.8'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP-7.2-x64\\ext;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP-7.2-x64;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\database\\MySQL-5.6\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7.2-x64\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7.2-x64;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'psy-api'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '100'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/psy-api'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/psy-api'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/psy-api/web/index.php'
+    'REMOTE_PORT' => '16131'
+    'REDIRECT_URL' => '/manager-user/validate-create-user-login'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/manager-user/validate-create-user-login'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1573936748.386
+    'REQUEST_TIME' => 1573936748
+    'argv' => []
+    'argc' => 0
+]
+2019-11-16 23:39:08 [127.0.0.1][-][-][error][TypeError] TypeError: Argument 1 passed to app\models\AesToken::decode() must be of the type string, null given, called in C:\OSPanel\domains\psy-api\controllers\ManagerController.php on line 50 and defined in C:\OSPanel\domains\psy-api\models\AesToken.php:25
+Stack trace:
+#0 C:\OSPanel\domains\psy-api\controllers\ManagerController.php(50): app\models\AesToken::decode(NULL)
+#1 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\Controller.php(159): app\controllers\ManagerController->afterAction(Object(yii\base\InlineAction), 'null')
+#2 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('validate-create...', Array)
+#3 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('manager-user/va...', Array)
+#4 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 C:\OSPanel\domains\psy-api\web\index.php(12): yii\base\Application->run()
+#6 {main}
+2019-11-16 23:39:08 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'psy-api:100'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '57'
+    'HTTP_ORIGIN' => 'http://localhost:8100'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36'
+    'CONTENT_TYPE' => 'text/plain;charset=UTF-8'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://localhost:8100/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en-US;q=0.9,en;q=0.8'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP-7.2-x64\\ext;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP-7.2-x64;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\database\\MySQL-5.6\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7.2-x64\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7.2-x64;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'psy-api'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '100'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/psy-api'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/psy-api'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/psy-api/web/index.php'
+    'REMOTE_PORT' => '16151'
+    'REDIRECT_URL' => '/manager-user/validate-create-user-login'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/manager-user/validate-create-user-login'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1573936748.445
+    'REQUEST_TIME' => 1573936748
+    'argv' => []
+    'argc' => 0
+]
+2019-11-16 23:39:14 [127.0.0.1][-][-][error][TypeError] TypeError: Argument 1 passed to app\models\AesToken::decode() must be of the type string, null given, called in C:\OSPanel\domains\psy-api\controllers\ManagerController.php on line 50 and defined in C:\OSPanel\domains\psy-api\models\AesToken.php:25
+Stack trace:
+#0 C:\OSPanel\domains\psy-api\controllers\ManagerController.php(50): app\models\AesToken::decode(NULL)
+#1 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\Controller.php(159): app\controllers\ManagerController->afterAction(Object(yii\base\InlineAction), 'null')
+#2 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('validate-create...', Array)
+#3 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('manager-user/va...', Array)
+#4 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 C:\OSPanel\domains\psy-api\web\index.php(12): yii\base\Application->run()
+#6 {main}
+2019-11-16 23:39:14 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'psy-api:100'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '51'
+    'HTTP_ORIGIN' => 'http://localhost:8100'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36'
+    'CONTENT_TYPE' => 'text/plain;charset=UTF-8'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://localhost:8100/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en-US;q=0.9,en;q=0.8'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP-7.2-x64\\ext;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP-7.2-x64;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\database\\MySQL-5.6\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7.2-x64\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7.2-x64;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'psy-api'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '100'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/psy-api'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/psy-api'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/psy-api/web/index.php'
+    'REMOTE_PORT' => '16166'
+    'REDIRECT_URL' => '/manager-user/validate-create-user-login'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/manager-user/validate-create-user-login'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1573936754.258
+    'REQUEST_TIME' => 1573936754
+    'argv' => []
+    'argc' => 0
+]
+2019-11-16 23:39:14 [127.0.0.1][-][-][error][TypeError] TypeError: Argument 1 passed to app\models\AesToken::decode() must be of the type string, null given, called in C:\OSPanel\domains\psy-api\controllers\ManagerController.php on line 50 and defined in C:\OSPanel\domains\psy-api\models\AesToken.php:25
+Stack trace:
+#0 C:\OSPanel\domains\psy-api\controllers\ManagerController.php(50): app\models\AesToken::decode(NULL)
+#1 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\Controller.php(159): app\controllers\ManagerController->afterAction(Object(yii\base\InlineAction), 'null')
+#2 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('validate-create...', Array)
+#3 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('manager-user/va...', Array)
+#4 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 C:\OSPanel\domains\psy-api\web\index.php(12): yii\base\Application->run()
+#6 {main}
+2019-11-16 23:39:14 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'psy-api:100'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '51'
+    'HTTP_ORIGIN' => 'http://localhost:8100'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36'
+    'CONTENT_TYPE' => 'text/plain;charset=UTF-8'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://localhost:8100/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en-US;q=0.9,en;q=0.8'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP-7.2-x64\\ext;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP-7.2-x64;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\database\\MySQL-5.6\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7.2-x64\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7.2-x64;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'psy-api'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '100'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/psy-api'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/psy-api'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/psy-api/web/index.php'
+    'REMOTE_PORT' => '16152'
+    'REDIRECT_URL' => '/manager-user/validate-create-user-login'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/manager-user/validate-create-user-login'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1573936754.242
+    'REQUEST_TIME' => 1573936754
+    'argv' => []
+    'argc' => 0
+]
+2019-11-17 00:14:35 [127.0.0.1][-][-][error][TypeError] TypeError: Argument 1 passed to app\models\AesToken::decode() must be of the type string, null given, called in C:\OSPanel\domains\psy-api\controllers\ManagerController.php on line 50 and defined in C:\OSPanel\domains\psy-api\models\AesToken.php:25
+Stack trace:
+#0 C:\OSPanel\domains\psy-api\controllers\ManagerController.php(50): app\models\AesToken::decode(NULL)
+#1 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\Controller.php(159): app\controllers\ManagerController->afterAction(Object(yii\base\InlineAction), 'null')
+#2 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('check-edit-name', Array)
+#3 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('specialist/chec...', Array)
+#4 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 C:\OSPanel\domains\psy-api\web\index.php(12): yii\base\Application->run()
+#6 {main}
+2019-11-17 00:14:34 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'psy-api:100'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '59'
+    'HTTP_ORIGIN' => 'http://localhost:8100'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36'
+    'CONTENT_TYPE' => 'text/plain;charset=UTF-8'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://localhost:8100/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en-US;q=0.9,en;q=0.8'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP-7.2-x64\\ext;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP-7.2-x64;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\database\\MySQL-5.6\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7.2-x64\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7.2-x64;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'psy-api'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '100'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/psy-api'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/psy-api'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/psy-api/web/index.php'
+    'REMOTE_PORT' => '17998'
+    'REDIRECT_URL' => '/specialist/check-edit-name'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/specialist/check-edit-name'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1573938874.872
+    'REQUEST_TIME' => 1573938874
+    'argv' => []
+    'argc' => 0
+]
+2019-11-17 00:14:35 [127.0.0.1][-][-][error][TypeError] TypeError: Argument 1 passed to app\models\AesToken::decode() must be of the type string, null given, called in C:\OSPanel\domains\psy-api\controllers\ManagerController.php on line 50 and defined in C:\OSPanel\domains\psy-api\models\AesToken.php:25
+Stack trace:
+#0 C:\OSPanel\domains\psy-api\controllers\ManagerController.php(50): app\models\AesToken::decode(NULL)
+#1 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\Controller.php(159): app\controllers\ManagerController->afterAction(Object(yii\base\InlineAction), 'null')
+#2 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('check-edit-name', Array)
+#3 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('specialist/chec...', Array)
+#4 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 C:\OSPanel\domains\psy-api\web\index.php(12): yii\base\Application->run()
+#6 {main}
+2019-11-17 00:14:34 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'psy-api:100'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '59'
+    'HTTP_ORIGIN' => 'http://localhost:8100'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36'
+    'CONTENT_TYPE' => 'text/plain;charset=UTF-8'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://localhost:8100/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en-US;q=0.9,en;q=0.8'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP-7.2-x64\\ext;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP-7.2-x64;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\database\\MySQL-5.6\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7.2-x64\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7.2-x64;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'psy-api'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '100'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/psy-api'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/psy-api'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/psy-api/web/index.php'
+    'REMOTE_PORT' => '18019'
+    'REDIRECT_URL' => '/specialist/check-edit-name'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/specialist/check-edit-name'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1573938874.931
+    'REQUEST_TIME' => 1573938874
+    'argv' => []
+    'argc' => 0
+]
+2019-11-17 00:35:06 [127.0.0.1][-][-][error][TypeError] TypeError: Argument 1 passed to app\models\AesToken::decode() must be of the type string, null given, called in C:\OSPanel\domains\psy-api\controllers\ManagerController.php on line 50 and defined in C:\OSPanel\domains\psy-api\models\AesToken.php:25
+Stack trace:
+#0 C:\OSPanel\domains\psy-api\controllers\ManagerController.php(50): app\models\AesToken::decode(NULL)
+#1 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\Controller.php(159): app\controllers\ManagerController->afterAction(Object(yii\base\InlineAction), 'null')
+#2 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('check-edit-name', Array)
+#3 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('specialist/chec...', Array)
+#4 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 C:\OSPanel\domains\psy-api\web\index.php(12): yii\base\Application->run()
+#6 {main}
+2019-11-17 00:35:06 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'psy-api:100'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '59'
+    'HTTP_ORIGIN' => 'http://localhost:8100'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36'
+    'CONTENT_TYPE' => 'text/plain;charset=UTF-8'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://localhost:8100/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en-US;q=0.9,en;q=0.8'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP-7.2-x64\\ext;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP-7.2-x64;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\database\\MySQL-5.6\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7.2-x64\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7.2-x64;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'psy-api'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '100'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/psy-api'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/psy-api'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/psy-api/web/index.php'
+    'REMOTE_PORT' => '19105'
+    'REDIRECT_URL' => '/specialist/check-edit-name'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/specialist/check-edit-name'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1573940106.21
+    'REQUEST_TIME' => 1573940106
+    'argv' => []
+    'argc' => 0
+]
+2019-11-17 00:35:06 [127.0.0.1][-][-][error][TypeError] TypeError: Argument 1 passed to app\models\AesToken::decode() must be of the type string, null given, called in C:\OSPanel\domains\psy-api\controllers\ManagerController.php on line 50 and defined in C:\OSPanel\domains\psy-api\models\AesToken.php:25
+Stack trace:
+#0 C:\OSPanel\domains\psy-api\controllers\ManagerController.php(50): app\models\AesToken::decode(NULL)
+#1 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\Controller.php(159): app\controllers\ManagerController->afterAction(Object(yii\base\InlineAction), 'null')
+#2 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('check-edit-name', Array)
+#3 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('specialist/chec...', Array)
+#4 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 C:\OSPanel\domains\psy-api\web\index.php(12): yii\base\Application->run()
+#6 {main}
+2019-11-17 00:35:06 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'psy-api:100'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '59'
+    'HTTP_ORIGIN' => 'http://localhost:8100'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36'
+    'CONTENT_TYPE' => 'text/plain;charset=UTF-8'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://localhost:8100/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en-US;q=0.9,en;q=0.8'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP-7.2-x64\\ext;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP-7.2-x64;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\database\\MySQL-5.6\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7.2-x64\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7.2-x64;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'psy-api'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '100'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/psy-api'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/psy-api'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/psy-api/web/index.php'
+    'REMOTE_PORT' => '19112'
+    'REDIRECT_URL' => '/specialist/check-edit-name'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/specialist/check-edit-name'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1573940106.231
+    'REQUEST_TIME' => 1573940106
+    'argv' => []
+    'argc' => 0
+]
+2019-11-17 00:35:14 [127.0.0.1][-][-][error][TypeError] TypeError: Argument 1 passed to app\models\AesToken::decode() must be of the type string, null given, called in C:\OSPanel\domains\psy-api\controllers\ManagerController.php on line 50 and defined in C:\OSPanel\domains\psy-api\models\AesToken.php:25
+Stack trace:
+#0 C:\OSPanel\domains\psy-api\controllers\ManagerController.php(50): app\models\AesToken::decode(NULL)
+#1 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\Controller.php(159): app\controllers\ManagerController->afterAction(Object(yii\base\InlineAction), 'null')
+#2 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('check-edit-name', Array)
+#3 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('specialist/chec...', Array)
+#4 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 C:\OSPanel\domains\psy-api\web\index.php(12): yii\base\Application->run()
+#6 {main}
+2019-11-17 00:35:14 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'psy-api:100'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '44'
+    'HTTP_ORIGIN' => 'http://localhost:8100'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36'
+    'CONTENT_TYPE' => 'text/plain;charset=UTF-8'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://localhost:8100/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en-US;q=0.9,en;q=0.8'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP-7.2-x64\\ext;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP-7.2-x64;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\database\\MySQL-5.6\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7.2-x64\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7.2-x64;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'psy-api'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '100'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/psy-api'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/psy-api'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/psy-api/web/index.php'
+    'REMOTE_PORT' => '19113'
+    'REDIRECT_URL' => '/specialist/check-edit-name'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/specialist/check-edit-name'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1573940114.752
+    'REQUEST_TIME' => 1573940114
+    'argv' => []
+    'argc' => 0
+]
+2019-11-17 00:35:14 [127.0.0.1][-][-][error][TypeError] TypeError: Argument 1 passed to app\models\AesToken::decode() must be of the type string, null given, called in C:\OSPanel\domains\psy-api\controllers\ManagerController.php on line 50 and defined in C:\OSPanel\domains\psy-api\models\AesToken.php:25
+Stack trace:
+#0 C:\OSPanel\domains\psy-api\controllers\ManagerController.php(50): app\models\AesToken::decode(NULL)
+#1 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\Controller.php(159): app\controllers\ManagerController->afterAction(Object(yii\base\InlineAction), 'null')
+#2 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('check-edit-name', Array)
+#3 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('specialist/chec...', Array)
+#4 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 C:\OSPanel\domains\psy-api\web\index.php(12): yii\base\Application->run()
+#6 {main}
+2019-11-17 00:35:14 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'psy-api:100'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '44'
+    'HTTP_ORIGIN' => 'http://localhost:8100'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36'
+    'CONTENT_TYPE' => 'text/plain;charset=UTF-8'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://localhost:8100/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en-US;q=0.9,en;q=0.8'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP-7.2-x64\\ext;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP-7.2-x64;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\database\\MySQL-5.6\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7.2-x64\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7.2-x64;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'psy-api'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '100'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/psy-api'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/psy-api'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/psy-api/web/index.php'
+    'REMOTE_PORT' => '19133'
+    'REDIRECT_URL' => '/specialist/check-edit-name'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/specialist/check-edit-name'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1573940114.792
+    'REQUEST_TIME' => 1573940114
+    'argv' => []
+    'argc' => 0
+]
+2019-11-17 00:48:44 [127.0.0.1][-][-][error][TypeError] TypeError: Argument 1 passed to app\models\AesToken::decode() must be of the type string, null given, called in C:\OSPanel\domains\psy-api\controllers\ManagerController.php on line 50 and defined in C:\OSPanel\domains\psy-api\models\AesToken.php:25
+Stack trace:
+#0 C:\OSPanel\domains\psy-api\controllers\ManagerController.php(50): app\models\AesToken::decode(NULL)
+#1 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\Controller.php(159): app\controllers\ManagerController->afterAction(Object(yii\base\InlineAction), 'false')
+#2 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('check-create', Array)
+#3 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('seance/check-cr...', Array)
+#4 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 C:\OSPanel\domains\psy-api\web\index.php(12): yii\base\Application->run()
+#6 {main}
+2019-11-17 00:48:44 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'psy-api:100'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '81'
+    'HTTP_ORIGIN' => 'http://localhost:8100'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36'
+    'CONTENT_TYPE' => 'text/plain;charset=UTF-8'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://localhost:8100/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en-US;q=0.9,en;q=0.8'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP-7.2-x64\\ext;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP-7.2-x64;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\database\\MySQL-5.6\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7.2-x64\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7.2-x64;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'psy-api'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '100'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/psy-api'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/psy-api'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/psy-api/web/index.php'
+    'REMOTE_PORT' => '19981'
+    'REDIRECT_URL' => '/seance/check-create'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/seance/check-create'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1573940924.575
+    'REQUEST_TIME' => 1573940924
+    'argv' => []
+    'argc' => 0
+]
+2019-11-17 00:50:24 [127.0.0.1][-][-][error][TypeError] TypeError: Argument 1 passed to app\models\AesToken::decode() must be of the type string, null given, called in C:\OSPanel\domains\psy-api\controllers\ManagerController.php on line 50 and defined in C:\OSPanel\domains\psy-api\models\AesToken.php:25
+Stack trace:
+#0 C:\OSPanel\domains\psy-api\controllers\ManagerController.php(50): app\models\AesToken::decode(NULL)
+#1 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\Controller.php(159): app\controllers\ManagerController->afterAction(Object(yii\base\InlineAction), 'false')
+#2 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('check-create', Array)
+#3 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('seance/check-cr...', Array)
+#4 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 C:\OSPanel\domains\psy-api\web\index.php(12): yii\base\Application->run()
+#6 {main}
+2019-11-17 00:50:24 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'psy-api:100'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '81'
+    'HTTP_ORIGIN' => 'http://localhost:8100'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36'
+    'CONTENT_TYPE' => 'text/plain;charset=UTF-8'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://localhost:8100/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en-US;q=0.9,en;q=0.8'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP-7.2-x64\\ext;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP-7.2-x64;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\database\\MySQL-5.6\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7.2-x64\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7.2-x64;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'psy-api'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '100'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/psy-api'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/psy-api'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/psy-api/web/index.php'
+    'REMOTE_PORT' => '20097'
+    'REDIRECT_URL' => '/seance/check-create'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/seance/check-create'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1573941024.699
+    'REQUEST_TIME' => 1573941024
+    'argv' => []
+    'argc' => 0
+]
+2019-11-17 00:53:35 [127.0.0.1][-][-][error][TypeError] TypeError: Argument 1 passed to app\models\AesToken::decode() must be of the type string, null given, called in C:\OSPanel\domains\psy-api\controllers\ManagerController.php on line 50 and defined in C:\OSPanel\domains\psy-api\models\AesToken.php:25
+Stack trace:
+#0 C:\OSPanel\domains\psy-api\controllers\ManagerController.php(50): app\models\AesToken::decode(NULL)
+#1 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\Controller.php(159): app\controllers\ManagerController->afterAction(Object(yii\base\InlineAction), 'null')
+#2 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('check-edit-name', Array)
+#3 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('specialist/chec...', Array)
+#4 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 C:\OSPanel\domains\psy-api\web\index.php(12): yii\base\Application->run()
+#6 {main}
+2019-11-17 00:53:35 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'psy-api:100'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '44'
+    'HTTP_ORIGIN' => 'http://localhost:8100'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36'
+    'CONTENT_TYPE' => 'text/plain;charset=UTF-8'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://localhost:8100/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en-US;q=0.9,en;q=0.8'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP-7.2-x64\\ext;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP-7.2-x64;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\database\\MySQL-5.6\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7.2-x64\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7.2-x64;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'psy-api'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '100'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/psy-api'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/psy-api'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/psy-api/web/index.php'
+    'REMOTE_PORT' => '20322'
+    'REDIRECT_URL' => '/specialist/check-edit-name'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/specialist/check-edit-name'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1573941215.292
+    'REQUEST_TIME' => 1573941215
+    'argv' => []
+    'argc' => 0
+]
+2019-11-17 00:53:35 [127.0.0.1][-][-][error][TypeError] TypeError: Argument 1 passed to app\models\AesToken::decode() must be of the type string, null given, called in C:\OSPanel\domains\psy-api\controllers\ManagerController.php on line 50 and defined in C:\OSPanel\domains\psy-api\models\AesToken.php:25
+Stack trace:
+#0 C:\OSPanel\domains\psy-api\controllers\ManagerController.php(50): app\models\AesToken::decode(NULL)
+#1 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\Controller.php(159): app\controllers\ManagerController->afterAction(Object(yii\base\InlineAction), 'null')
+#2 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Controller->runAction('check-edit-name', Array)
+#3 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('specialist/chec...', Array)
+#4 C:\OSPanel\domains\psy-api\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 C:\OSPanel\domains\psy-api\web\index.php(12): yii\base\Application->run()
+#6 {main}
+2019-11-17 00:53:35 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'psy-api:100'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '44'
+    'HTTP_ORIGIN' => 'http://localhost:8100'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36'
+    'CONTENT_TYPE' => 'text/plain;charset=UTF-8'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_REFERER' => 'http://localhost:8100/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru,en-US;q=0.9,en;q=0.8'
+    'PATH' => 'c:\\ospanel\\modules\\php\\PHP-7.2-x64\\ext;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear;c:\\ospanel\\modules\\php\\PHP-7.2-x64\\pear\\bin;c:\\ospanel\\modules\\php\\PHP-7.2-x64;c:\\ospanel\\modules\\wget\\bin;c:\\ospanel\\modules\\database\\MySQL-5.6\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7.2-x64\\bin;c:\\ospanel\\modules\\http\\Apache-PHP-7.2-x64;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\system32\\Wbem;C:\\WINDOWS\\SysWOW64'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'psy-api'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '100'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/OSPanel/domains/psy-api'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/OSPanel/domains/psy-api'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => 'C:/OSPanel/domains/psy-api/web/index.php'
+    'REMOTE_PORT' => '20325'
+    'REDIRECT_URL' => '/specialist/check-edit-name'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/specialist/check-edit-name'
+    'SCRIPT_NAME' => '/web/index.php'
+    'PHP_SELF' => '/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1573941215.316
+    'REQUEST_TIME' => 1573941215
+    'argv' => []
+    'argc' => 0
+]

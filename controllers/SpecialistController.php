@@ -2,8 +2,9 @@
 
 namespace app\controllers;
 
+use app\models\Good;
+use app\models\Seance;
 use app\models\Specialist;
-use app\models\User;
 use Yii;
 use yii\helpers\Json;
 
@@ -81,15 +82,10 @@ class SpecialistController extends ManagerController
 
     }
 
-    // public function actionDelete()
-    // {
-    //     $id = Yii::$app->request->post('id');
-    //     $user = User::findOne($id);
-    //     $user->blocked = 1;
-    //     if ($user->save()) {
-    //         return true;
-    //     }
-    //     return false;
-    // }
-
+    public function actionDelete()
+    {
+        $id = Yii::$app->request->post('id');
+        $specialist = Specialist::findOne($id);
+        return Json::encode($specialist->delete());
+    }
 }

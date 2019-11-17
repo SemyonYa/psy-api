@@ -19,6 +19,7 @@ use Yii;
  * @property string $refresh_token
  * @property integer $blocked
  * @property string $role
+ * @property integer $specialist_id
  *
  * @property Specialist[] $specialists
  */
@@ -39,12 +40,12 @@ class User extends \yii\db\ActiveRecord
     {
         return [
             [['organization_name', 'email', 'phone', 'login', 'role'], 'required'],
-            [['specialists_quantity', 'parent_user_id', 'blocked'], 'integer'],
+            [['specialists_quantity', 'parent_user_id', 'specialist_id'], 'integer'],
             [['password_hash', 'access_token', 'refresh_token'], 'string'],
             [['organization_name'], 'string', 'max' => 150],
             [['email'], 'string', 'max' => 50],
-            [['phone'], 'string', 'max' => 20],
-            [['login'], 'string', 'max' => 45],
+            [['phone', 'login'], 'string', 'max' => 20],
+            [['blocked'], 'string', 'max' => 4],
             [['role'], 'string', 'max' => 10],
         ];
     }
@@ -67,6 +68,7 @@ class User extends \yii\db\ActiveRecord
             'refresh_token' => 'Refresh Token',
             'blocked' => 'Blocked',
             'role' => 'Role',
+            'specialist_id' => 'Specialist ID',
         ];
     }
 

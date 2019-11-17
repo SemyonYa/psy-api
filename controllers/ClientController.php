@@ -120,13 +120,18 @@ class ClientController extends Controller
 
     public function actionSeance($id)
     {
-        $q = 'SELECT s.date, s.time, s.duration, s.seance_status, s.price, g.id, g.name FROM seance as s INNER JOIN good as g ON s.good_id = g.id WHERE s.id = :id';
+        $q = 'SELECT s.date, s.time, s.duration, s.seance_status, s.price, g.id, g.name FROM seance as s LEFT JOIN good as g ON s.good_id = g.id WHERE s.id = :id';
         $seance = Yii::$app->db->createCommand($q)->bindParam(':id', $id)->queryOne();
         return Json::encode($seance);
     }
 
+
+
     public function actionBooking()
     {
+        $req = Yii::$app->request;
+        $id = $req->post('id');
+
         return Json::encode(true);
     }
 }
