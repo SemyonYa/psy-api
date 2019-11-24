@@ -20,6 +20,7 @@ use Yii;
  * @property integer $blocked
  * @property string $role
  * @property integer $specialist_id
+ * @property string $img
  *
  * @property Specialist[] $specialists
  */
@@ -40,12 +41,11 @@ class User extends \yii\db\ActiveRecord
     {
         return [
             [['organization_name', 'email', 'phone', 'login', 'role'], 'required'],
-            [['specialists_quantity', 'parent_user_id', 'specialist_id'], 'integer'],
-            [['password_hash', 'access_token', 'refresh_token'], 'string'],
+            [['specialists_quantity', 'parent_user_id', 'blocked', 'specialist_id'], 'integer'],
+            [['password_hash', 'access_token', 'refresh_token', 'img'], 'string'],
             [['organization_name'], 'string', 'max' => 150],
             [['email'], 'string', 'max' => 50],
             [['phone', 'login'], 'string', 'max' => 20],
-            [['blocked'], 'string', 'max' => 4],
             [['role'], 'string', 'max' => 10],
         ];
     }
@@ -69,6 +69,7 @@ class User extends \yii\db\ActiveRecord
             'blocked' => 'Blocked',
             'role' => 'Role',
             'specialist_id' => 'Specialist ID',
+            'img' => 'Img',
         ];
     }
 

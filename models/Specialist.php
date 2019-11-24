@@ -10,11 +10,11 @@ use Yii;
  * @property integer $id
  * @property string $name
  * @property string $description
+ * @property string $img
  * @property integer $user_id
  *
  * @property Good[] $goods
  * @property User $user
- * @property Workday[] $workdays
  */
 class Specialist extends \yii\db\ActiveRecord
 {
@@ -33,7 +33,7 @@ class Specialist extends \yii\db\ActiveRecord
     {
         return [
             [['name', 'user_id'], 'required'],
-            [['description'], 'string'],
+            [['description', 'img'], 'string'],
             [['user_id'], 'integer'],
             [['name'], 'string', 'max' => 45],
             [['user_id'], 'exist', 'skipOnError' => true, 'targetClass' => User::className(), 'targetAttribute' => ['user_id' => 'id']],
@@ -49,6 +49,7 @@ class Specialist extends \yii\db\ActiveRecord
             'id' => 'ID',
             'name' => 'Name',
             'description' => 'Description',
+            'img' => 'Img',
             'user_id' => 'User ID',
         ];
     }
@@ -67,13 +68,5 @@ class Specialist extends \yii\db\ActiveRecord
     public function getUser()
     {
         return $this->hasOne(User::className(), ['id' => 'user_id']);
-    }
-
-    /**
-     * @return \yii\db\ActiveQuery
-     */
-    public function getWorkdays()
-    {
-        return $this->hasMany(Workday::className(), ['specialist_id' => 'id']);
     }
 }

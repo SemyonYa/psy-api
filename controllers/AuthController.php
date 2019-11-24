@@ -4,12 +4,6 @@ namespace app\controllers;
 
 use app\models\AesToken;
 use app\models\User;
-use DateInterval;
-use DateTimeImmutable;
-use Lcobucci\Jose\Parsing\Parser as LcobucciParser;
-use Lcobucci\JWT\Signer\Hmac\Sha256;
-use Lcobucci\JWT\Signer\Key;
-use Lcobucci\JWT\Token\Builder;
 use Yii;
 use yii\helpers\Json;
 use yii\web\Controller;
@@ -54,9 +48,10 @@ class AuthController extends Controller
         $login = $req->post('login');
         $password = $req->post('password');
         $role = $req->post('app');
+        $role_r = explode(',', $role);
         $user = User::findOne(['login' => $login]);
         if ($user) {
-            if ($user->role === $role) {
+            if (in_array($user->role, $role_r)) {
                 $user->access_token = AesToken::generate($user);
                 if (Yii::$app->security->validatePassword($password, $user->password_hash)) {
                     if ($user->save()) {
@@ -64,7 +59,8 @@ class AuthController extends Controller
                             'id' => $user->id,
                             'login' => $user->login,
                             'organization' => $user->organization_name,
-                            'token' => $user->access_token
+                            'token' => $user->access_token,
+                            'role' => $user->role,
                         ]
                         );
                     }
@@ -75,44 +71,40 @@ class AuthController extends Controller
     }
 }
 
+// public function actionRefreshTokens() {
+//     // $signer = new Sha256();
+//     // $token = Yii::$app->request->post('r');
+//     // $refresh_token = (new Parser())->parse((string) $token);
+//     // $refresh_token->verify($signer, 'psy');
+//     // return Json::encode($refresh_token->getHeaders());
+//     return Json::encode([
+//         'a' => 'NEW_ACCESS_TOKEN',
+//         'r' => 'NEW_REFRESH_TOKEN'
+//     ]);
+// }
 
+// public function generateAccessToken(User $user)
+// {
+//     $time = new DateTimeImmutable(); //time();
+//     $jwt = (new Builder(new LcobucciParser()))
+//         ->issuedBy($_SERVER['HTTP_HOST'])
+//         ->issuedAt($time)
+//         ->expiresAt($time->add(new DateInterval('PT3M')))
+//         ->withClaim('uid', $user->id)
+//         ->withClaim('urole', $user->role)
+//         ->getToken(new Sha256(), new Key('psy'));
+//     return $jwt->__toString();
+// }
 
-
-
-    // public function actionRefreshTokens() {
-    //     // $signer = new Sha256();
-    //     // $token = Yii::$app->request->post('r');
-    //     // $refresh_token = (new Parser())->parse((string) $token);
-    //     // $refresh_token->verify($signer, 'psy');
-    //     // return Json::encode($refresh_token->getHeaders());
-    //     return Json::encode([
-    //         'a' => 'NEW_ACCESS_TOKEN',
-    //         'r' => 'NEW_REFRESH_TOKEN'
-    //     ]);
-    // }
-
-    // public function generateAccessToken(User $user)
-    // {
-    //     $time = new DateTimeImmutable(); //time();
-    //     $jwt = (new Builder(new LcobucciParser()))
-    //         ->issuedBy($_SERVER['HTTP_HOST'])
-    //         ->issuedAt($time)
-    //         ->expiresAt($time->add(new DateInterval('PT3M')))
-    //         ->withClaim('uid', $user->id)
-    //         ->withClaim('urole', $user->role)
-    //         ->getToken(new Sha256(), new Key('psy'));
-    //     return $jwt->__toString();
-    // }
-
-    // public function generateRefreshToken(User $user)
-    // {
-    //     $time = new DateTimeImmutable(); //time();
-    //     $jwt = (new Builder(new LcobucciParser()))
-    //         ->issuedBy($_SERVER['HTTP_HOST'])
-    //         ->issuedAt($time->add(new DateInterval('P1D')))
-    //         ->expiresAt($time)
-    //         ->withClaim('uid', $user->id)
-    //         ->withClaim('urole', $user->role)
-    //         ->getToken(new Sha256(), new Key('psy'));
-    //     return $jwt->__toString();
-    // }
+// public function generateRefreshToken(User $user)
+// {
+//     $time = new DateTimeImmutable(); //time();
+//     $jwt = (new Builder(new LcobucciParser()))
+//         ->issuedBy($_SERVER['HTTP_HOST'])
+//         ->issuedAt($time->add(new DateInterval('P1D')))
+//         ->expiresAt($time)
+//         ->withClaim('uid', $user->id)
+//         ->withClaim('urole', $user->role)
+//         ->getToken(new Sha256(), new Key('psy'));
+//     return $jwt->__toString();
+// }

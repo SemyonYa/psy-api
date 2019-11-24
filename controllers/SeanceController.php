@@ -6,6 +6,7 @@ use app\models\Good;
 use app\models\Seance;
 use app\models\Specialist;
 use Yii;
+use yii\db\Query;
 use yii\helpers\Json;
 use yii\web\ForbiddenHttpException;
 
@@ -27,7 +28,7 @@ class SeanceController extends ManagerController
     }
 
     public function checkExist()
-    { }
+    {}
 
     public function getSpecialistGoodIds($spec_id)
     {
@@ -38,16 +39,56 @@ class SeanceController extends ManagerController
     {
         $req = Yii::$app->request;
         $spec_id = $req->get('specialistId');
-        $good_ids = $this->getSpecialistGoodIds($spec_id);
         $date = $req->get('date');
-        $seances = Seance::find()->where(['in', 'good_id', $good_ids])->andWhere(['date' => $date])->orderBy('date')->asArray()->all();
+        $good_ids = $this->getSpecialistGoodIds($spec_id);
+        // $seances = Seance::find()->where(['in', 'good_id', $good_ids])->andWhere(['date' => $date])->orderBy('date')->asArray()->all();
 
+        // $q = 'SELECT s.id, s.date, s.time, s.duration, s.seance_status, s.price, g.id as good_id, g.name FROM seance as s LEFT JOIN good as g ON s.good_id = g.id WHERE s.date = :date AND g.id in :good_ids';
+        // $seances =  Yii::$app->db->createCommand($q)->bindParam(':date', $date)->bindParam('good_ids', $good_ids)->queryAll();
+
+        $q = new Query();
+        $seances = $q
+            ->select([
+                'id' => 's.id',
+                'date' => 's.date',
+                'time' => 's.time',
+                'duration' => 's.duration',
+                'seance_status' => 's.seance_status',
+                'price' => 's.price',
+                'good_id' => 'g.id',
+                'name' => 'g.name',
+            ])
+            ->from([
+                's' => 'seance'
+            ])
+            ->leftJoin('good AS g', 's.good_id = g.id')
+            ->where(['in', 'good_id', $good_ids])
+            ->andWhere(['date' => $date])
+            ->all();
         return Json::encode($seances);
     }
 
     public function actionOne($id)
     {
-        return Json::encode(Seance::find()->where(['id' => $id])->asArray()->one());
+        $q = new Query();
+        $seance = $q
+            ->select([
+                'id' => 's.id',
+                'date' => 's.date',
+                'time' => 's.time',
+                'duration' => 's.duration',
+                'seance_status' => 's.seance_status',
+                'price' => 's.price',
+                'good_id' => 'g.id',
+                'name' => 'g.name',
+            ])
+            ->from([
+                's' => 'seance'
+            ])
+            ->leftJoin('good AS g', 's.good_id = g.id')
+            ->where(['s.id' => $id])
+            ->one();
+        return Json::encode($seance);
     }
 
     public function actionCreate()
@@ -123,7 +164,7 @@ class SeanceController extends ManagerController
         $end = strtotime('-1 day', strtotime('+1 month', $start));
 
         $good_ids = $this->getSpecialistGoodIds($spec_id);
-        
+
         $workdays = Seance::find()
             ->where(['between', 'date', date('Y-m-d', $start), date('Y-m-d', $end)])
             ->andWhere(['in', 'good_id', $good_ids])->select(['date'])
