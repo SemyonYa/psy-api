@@ -11,11 +11,15 @@ use Yii;
  * @property string $date
  * @property string $time
  * @property integer $duration
- * @property integer $seance_status
  * @property integer $good_id
  * @property integer $price
  * @property integer $client_id
+ * @property integer $status
+ * @property integer $booking_now
+ * @property string $booking_start_at
+ * @property integer $booking_code
  *
+ * @property Client[] $clients
  * @property Good $good
  */
 class Seance extends \yii\db\ActiveRecord
@@ -34,9 +38,9 @@ class Seance extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['date', 'time', 'duration', 'seance_status', 'good_id', 'price'], 'required'],
-            [['date', 'time'], 'safe'],
-            [['duration', 'seance_status', 'good_id', 'price', 'client_id'], 'integer'],
+            [['date', 'time', 'duration', 'good_id', 'price', 'status'], 'required'],
+            [['date', 'time', 'booking_start_at'], 'safe'],
+            [['duration', 'good_id', 'price', 'client_id', 'status', 'booking_now', 'booking_code'], 'integer'],
             [['good_id'], 'exist', 'skipOnError' => true, 'targetClass' => Good::className(), 'targetAttribute' => ['good_id' => 'id']],
         ];
     }
@@ -51,11 +55,22 @@ class Seance extends \yii\db\ActiveRecord
             'date' => 'Date',
             'time' => 'Time',
             'duration' => 'Duration',
-            'seance_status' => 'Seance Status',
             'good_id' => 'Good ID',
             'price' => 'Price',
             'client_id' => 'Client ID',
+            'status' => 'Status',
+            'booking_now' => 'Booking Now',
+            'booking_start_at' => 'Booking Start At',
+            'booking_code' => 'Booking Code',
         ];
+    }
+
+    /**
+     * @return \yii\db\ActiveQuery
+     */
+    public function getClients()
+    {
+        return $this->hasMany(Client::className(), ['seance_id' => 'id']);
     }
 
     /**

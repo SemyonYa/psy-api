@@ -12,7 +12,7 @@ use yii\web\ForbiddenHttpException;
 
 class SeanceController extends ManagerController
 {
-    public function create($date, $time, $price, $duration, $good_id, $seance_status = 1)
+    public function create($date, $time, $price, $duration, $good_id, $status = 1)
     {
         $this->checkExist();
         $seance = new Seance();
@@ -21,7 +21,7 @@ class SeanceController extends ManagerController
         $seance->duration = $duration;
         $seance->good_id = $good_id;
         $seance->price = $price;
-        $seance->seance_status = $seance_status;
+        $seance->status = $status;
         $seance->save();
 
         return $seance->id;
@@ -43,7 +43,7 @@ class SeanceController extends ManagerController
         $good_ids = $this->getSpecialistGoodIds($spec_id);
         // $seances = Seance::find()->where(['in', 'good_id', $good_ids])->andWhere(['date' => $date])->orderBy('date')->asArray()->all();
 
-        // $q = 'SELECT s.id, s.date, s.time, s.duration, s.seance_status, s.price, g.id as good_id, g.name FROM seance as s LEFT JOIN good as g ON s.good_id = g.id WHERE s.date = :date AND g.id in :good_ids';
+        // $q = 'SELECT s.id, s.date, s.time, s.duration, s.status, s.price, g.id as good_id, g.name FROM seance as s LEFT JOIN good as g ON s.good_id = g.id WHERE s.date = :date AND g.id in :good_ids';
         // $seances =  Yii::$app->db->createCommand($q)->bindParam(':date', $date)->bindParam('good_ids', $good_ids)->queryAll();
 
         $q = new Query();
@@ -53,7 +53,7 @@ class SeanceController extends ManagerController
                 'date' => 's.date',
                 'time' => 's.time',
                 'duration' => 's.duration',
-                'seance_status' => 's.seance_status',
+                'status' => 's.status',
                 'price' => 's.price',
                 'good_id' => 'g.id',
                 'name' => 'g.name',
@@ -77,7 +77,7 @@ class SeanceController extends ManagerController
                 'date' => 's.date',
                 'time' => 's.time',
                 'duration' => 's.duration',
-                'seance_status' => 's.seance_status',
+                'status' => 's.status',
                 'price' => 's.price',
                 'good_id' => 'g.id',
                 'name' => 'g.name',
@@ -100,7 +100,7 @@ class SeanceController extends ManagerController
         $duration = $req->post('duration');
         $good_id = $req->post('goodId');
         $price = $req->post('price');
-        $seance_status = $req->post('seanceStatus');
+        $status = $req->post('seanceStatus');
         if ($this->create($date, $time, $price, $duration, $good_id)) {
             return Json::encode(true);
         }
@@ -119,7 +119,7 @@ class SeanceController extends ManagerController
         $seance->time = $req->post('time');
         $seance->duration = $req->post('duration');
         $seance->price = $req->post('price');
-        $seance->seance_status = $req->post('seanceStatus');
+        $seance->status = $req->post('seanceStatus');
         $seance->good_id = $req->post('goodId');
         if ($seance->save()) {
             return Json::encode($seance->id);
@@ -131,7 +131,7 @@ class SeanceController extends ManagerController
     {
         $id = Yii::$app->request->post('id');
         $seance = Seance::findOne($id);
-        if ($seance->seance_status === 1) {
+        if ($seance->status === 1) {
             if ($seance->delete()) {
                 return Json::encode(true);
             }

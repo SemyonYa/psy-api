@@ -9,9 +9,12 @@ use Yii;
  *
  * @property integer $id
  * @property string $name
- * @property string $description
+ * @property string $wish
  * @property integer $phone
- * @property string $e-mail
+ * @property string $email
+ * @property integer $seance_id
+ *
+ * @property Seance $seance
  */
 class Client extends \yii\db\ActiveRecord
 {
@@ -29,10 +32,12 @@ class Client extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['name', 'description', 'phone', 'e-mail'], 'required'],
-            [['description', 'e-mail'], 'string'],
-            [['phone'], 'integer'],
+            [['name', 'phone', 'email', 'seance_id'], 'required'],
+            [['wish'], 'string'],
+            [['phone', 'seance_id'], 'integer'],
             [['name'], 'string', 'max' => 50],
+            [['email'], 'string', 'max' => 45],
+            [['seance_id'], 'exist', 'skipOnError' => true, 'targetClass' => Seance::className(), 'targetAttribute' => ['seance_id' => 'id']],
         ];
     }
 
@@ -44,9 +49,18 @@ class Client extends \yii\db\ActiveRecord
         return [
             'id' => 'ID',
             'name' => 'Name',
-            'description' => 'Description',
+            'wish' => 'Wish',
             'phone' => 'Phone',
-            'e-mail' => 'E Mail',
+            'email' => 'Email',
+            'seance_id' => 'Seance ID',
         ];
+    }
+
+    /**
+     * @return \yii\db\ActiveQuery
+     */
+    public function getSeance()
+    {
+        return $this->hasOne(Seance::className(), ['id' => 'seance_id']);
     }
 }
